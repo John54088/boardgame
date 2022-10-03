@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
 
 
+    <style>
+        .footer{
+            background-color: #777;
+        }
+        .footer-link-title{
+            background-color: #000;
+            color: #fff;
+        }
+        @media screen and (min-width: 768px){
+            .footer-link-md{
+                display: block !important;
+            }
+            .footer-link{
+                display: none;
+            }
+        }
+    </style>
 
   </head>
 
@@ -23,23 +40,41 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">關於我們</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            所有商品
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="product.html">商品總覽</a></li>
+                            <li><a class="dropdown-item" href="#">輕鬆派對</a></li>
+                            <li><a class="dropdown-item" href="#">策略陣營</a></li>
+                            <li><a class="dropdown-item" href="#">破冰大師</a></li>
+                            <li><a class="dropdown-item" href="#">闔家同樂</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="nav-link" href="#">登入</a>
+                    </li>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content p-2">
+                                <div class="email my-2">
+                                    <label for="userEmail" class="form-label">帳號</label>
+                                    <input type="email" class="form-control" id="userEmail">
+                                </div>
+                                <div class="password my-2">
+                                    <label for="userPassword" class="form-label">密碼</label>
+                                    <input type="password" class="form-control" id="userPassword">
+                                </div>
+                                <button type="submit" class="btn btn-secondary my-2">提交</button>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
+                
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
@@ -51,9 +86,8 @@
     <div class="container mt-4 bread">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Library</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Data</li>
+                <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">商品總覽</li>
             </ol>
         </nav>
     </div>
@@ -65,16 +99,105 @@
             <div class="col-3">
                 <div class="list-group my-2">
                     <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                      The current link item
+                      全部商品
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-                    <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-                    <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                    <a class="list-group-item list-group-item-action">A disabled link item</a>
+                    <a href="#" class="list-group-item list-group-item-action">輕鬆派對</a>
+                    <a href="#" class="list-group-item list-group-item-action">策略陣營</a>
+                    <a href="#" class="list-group-item list-group-item-action">破冰大師</a>
+                    <a class="list-group-item list-group-item-action">闔家同樂</a>
                   </div>
             </div>
             <div class="col-9">
                 <div class="row row-cols row-cols-md-2 row-cols-xl-4">
+                    <div class="col my-2">
+                        <div class="card">
+                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col my-2">
                         <div class="card">
                             <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
@@ -184,6 +307,105 @@
                         </li>
                     </ul>
                 </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-3 footer-link-md d-none">
+                    <div class="list-group">
+                        <div class="list-group-item footer-link-title">A disabled link item</div>
+                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                    </div>
+                </div>
+                <div class="col-3 footer-link-md d-none">
+                    <div class="list-group">
+                        <div class="list-group-item footer-link-title">A disabled link item</div>
+                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                    </div>
+                </div>
+                <div class="col-3 footer-link-md d-none">
+                    <div class="list-group">
+                        <div class="list-group-item footer-link-title">A disabled link item</div>
+                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                    </div>
+                </div>
+                <div class="col-12 footer-link">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <div class="container-fluid">
+                          <div class="navbar-brand">Navbar</div>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-link-btn-1" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="footer-link-btn-1">
+                            <ul class="list-group">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li>
+                              </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+                <div class="col-12 footer-link">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <div class="container-fluid">
+                          <div class="navbar-brand">Navbar</div>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-link-btn-2" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="footer-link-btn-2">
+                            <ul class="list-group">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li>
+                              </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+                <div class="col-12 footer-link">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <div class="container-fluid">
+                          <div class="navbar-brand">Navbar</div>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-link-btn-3" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="footer-link-btn-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li>
+                              </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+                <div class="col-12 mt-2">
+                    <div class="copyright text-center">
+                        <p>xxx桌遊股份有限公司</p>
+                        <p>地址 ： 雲林縣斗六市中山路104巷48號</p>
+                        <p>服務時間：週一~六 13:00~:00</p>
+                        <p>
+                            copyright &copy; since 1997  
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -14,9 +14,12 @@
             background-color: #000;
             color: #fff;
         }
-        
+        .promotion-title, .product-card-title{
+            background-color: #777;
+            color: #fff;
+        }
         @media screen and (min-width: 768px){
-            .product-card .col-12:last-child{
+            .product-card .col-12:nth-child(even){
                 margin-top: -100px;
             }
             .footer-link-md{
@@ -43,43 +46,41 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">關於我們</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            所有商品
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="product.html">商品總覽</a></li>
+                            <li><a class="dropdown-item" href="#">輕鬆派對</a></li>
+                            <li><a class="dropdown-item" href="#">策略陣營</a></li>
+                            <li><a class="dropdown-item" href="#">破冰大師</a></li>
+                            <li><a class="dropdown-item" href="#">闔家同樂</a></li>
                         </ul>
                     </li>
-                </ul>
-                <button type="button" class="btn btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    登入
-                </button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                    <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="nav-link" href="#">登入</a>
+                    </li>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content p-2">
+                                <div class="email my-2">
+                                    <label for="userEmail" class="form-label">帳號</label>
+                                    <input type="email" class="form-control" id="userEmail">
+                                </div>
+                                <div class="password my-2">
+                                    <label for="userPassword" class="form-label">密碼</label>
+                                    <input type="password" class="form-control" id="userPassword">
+                                </div>
+                                <button type="submit" class="btn btn-secondary my-2">提交</button>
                             </div>
                         </div>
                     </div>
-                </div>
+                </ul>
+                
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
@@ -135,8 +136,34 @@
     </div>
 
 
+    <div class="container promotion">
+        <div class="col-12">
+            <div class="promotion-title mt-4">
+                <h1 class="p-1">
+                    促銷活動
+                </h1>
+            </div>
+            <a href="#" class="">
+                <img src="http://fakeimg.pl/1400x600" alt="" class="mt-4 w-100">
+            </a>
+            <a href="#" class="">
+                <img src="http://fakeimg.pl/1400x600" alt="" class="mt-4 w-100">
+            </a>
+            <a href="#" class="">
+                <img src="http://fakeimg.pl/1400x600" alt="" class="my-4 w-100">
+            </a>
+        </div>
+    </div>
+
     
     <div class="container product-cards py-4">
+        <div class="product-card-title">
+            <div class="col-12">
+                <h1 class="p-1">
+                    暢銷商品
+                </h1>
+            </div>
+        </div>
         <div class="row product-card py-1">
             <div class="col-12 col-md-7">
                 <img src="http://fakeimg.pl/1000x800" alt="" class="w-100">
@@ -183,8 +210,6 @@
                       </div>
                 </div>
             </div>
-        </div>
-        <div class="row product-card py-1">
             <div class="col-12 col-md-7 ms-auto">
                 <img src="http://fakeimg.pl/1000x800" alt="" class="w-100">
             </div>
@@ -230,8 +255,6 @@
                       </div>
                 </div>
             </div>
-        </div>
-        <div class="row product-card py-1">
             <div class="col-12 col-md-7">
                 <img src="http://fakeimg.pl/1000x800" alt="" class="w-100">
             </div>
@@ -311,11 +334,11 @@
                 <div class="col-12 footer-link">
                     <nav class="navbar navbar-dark bg-dark">
                         <div class="container-fluid">
-                          <a class="navbar-brand" href="#">Navbar</a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <div class="navbar-brand">Navbar</div>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-link-btn-1" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>
-                          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                          <div class="collapse navbar-collapse" id="footer-link-btn-1">
                             <ul class="list-group">
                                 <li class="list-group-item">An item</li>
                                 <li class="list-group-item">A second item</li>
@@ -330,11 +353,11 @@
                 <div class="col-12 footer-link">
                     <nav class="navbar navbar-dark bg-dark">
                         <div class="container-fluid">
-                          <a class="navbar-brand" href="#">Navbar</a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <div class="navbar-brand">Navbar</div>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-link-btn-2" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>
-                          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                          <div class="collapse navbar-collapse" id="footer-link-btn-2">
                             <ul class="list-group">
                                 <li class="list-group-item">An item</li>
                                 <li class="list-group-item">A second item</li>
@@ -349,11 +372,11 @@
                 <div class="col-12 footer-link">
                     <nav class="navbar navbar-dark bg-dark">
                         <div class="container-fluid">
-                          <a class="navbar-brand" href="#">Navbar</a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <div class="navbar-brand">Navbar</div>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-link-btn-3" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>
-                          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                          <div class="collapse navbar-collapse" id="footer-link-btn-3">
                             <ul class="list-group">
                                 <li class="list-group-item">An item</li>
                                 <li class="list-group-item">A second item</li>
@@ -366,7 +389,10 @@
                       </nav>
                 </div>
                 <div class="col-12 mt-2">
-                    <div class="copyright d-flex justify-content-center">
+                    <div class="copyright text-center">
+                        <p>xxx桌遊股份有限公司</p>
+                        <p>地址 ： 雲林縣斗六市中山路104巷48號</p>
+                        <p>服務時間：週一~六 13:00~:00</p>
                         <p>
                             copyright &copy; since 1997  
                         </p>
