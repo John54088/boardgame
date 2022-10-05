@@ -1,0 +1,76 @@
+.scrollProhibit{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.footer{
+    background-color: #777;
+}
+.footer-link-title{
+    background-color: #000;
+    color: #fff;
+}
+.links a{
+    text-decoration: none;
+}
+.promotion-title, .product-card-title{
+    background-color: #777;
+    color: #fff;
+}
+.fix-space{
+    margin-top: 56px;
+}
+.nav-login{
+    cursor: pointer;
+}
+.login{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: none;
+}
+.login-box{
+    width: 70vw;
+    max-width: 500px;
+    height: 310px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(50vh - 175px);
+}
+.login-banner{
+    height: 50px;
+    background-color: #777;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+.login-close{
+    right: 16px;
+    top: 13px;
+    position: absolute;
+    color: #fff;
+    font-size: large;
+}
+@media screen and (min-width: 768px){
+    .product-card .col-12:nth-child(even){
+        margin-top: -100px;
+    }
+    .footer-link-md{
+        display: block !important;
+    }
+    .footer-link{
+        display: none;
+    }
+    .about .col-12:nth-last-child(2){
+        margin-top: -200px;
+    }
+}
+@media screen and (max-width: 767px){
+    .aside{
+        display: none;
+    }
+}
