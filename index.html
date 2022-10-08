@@ -15,14 +15,151 @@
 
   <body>
     
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <div class="login">
+        <div class="login-box ps-a">
+            <div class="login-box-banner d-flex ps-r">
+                <div class="register-btn ms-auto">
+                    註冊
+                </div>
+                <div class="login-btn me-auto bottom-line">
+                    登入
+                </div>
+                <div class="login-close text-dark ps-a">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+            </div>
+
+            
+
+            <div class="login-content container">
+
+                <div class="line"></div>
+
+
+
+
+
+                    
+
+                
+                <form class="keyin mb-4 ps-r">
+
+                    <input type="email" class="form-control my-4" id="userEmail" required  placeholder="請輸入Email/手機號碼">
+
+                    <input type="password" class="form-control password-input" id="userPassword" required placeholder="請輸入密碼(6~20英數字)">
+
+                    <i class="bi bi-eye-slash eye-slash-icon ps-a"></i>
+                    <i class="bi bi-eye eye-icon ps-a"></i>
+
+                    <button type="submit" class="btn btn-secondary btn-login w-100 mt-4">登入</button>
+
+                </form>
+
+
+                    
+                
+                <div class=" mb-4 text-end">
+                    <a href="#" class="d-inline-block forgotPassword">忘記密碼</a>
+                </div>
+                
+
+                <div class="useQuickLogin d-flex align-items-center mb-4">
+                    <div class="quickLoginLine"></div>
+                    <div class="">使用以下方式快速登入</div>
+                    <div class="quickLoginLine"></div>
+                </div>
+
+                <button class="btn btn-primary w-100 mb-4">
+                    <i class="bi bi-facebook"></i>
+                    Facebook</button>
+                <button class="btn btn-success w-100">
+                    <i class="bi bi-line"></i>
+                    Line</button>
+
+
+            </div>
+
+            <div class="register-content container">
+                <div class="line"></div>
+                <div class="phone my-4">
+                    <div>TW +886</div>
+                    <input type="phone" class="form-control" id="userPhone" placeholder="0912 345 678">
+                </div>
+                <div class="continue mb-4">
+                    <button class="btn btn-secondary w-100">繼續</button>
+                </div>
+                <div class="useQuickLogin d-flex align-items-center mb-4">
+                    <div class="quickLoginLine"></div>
+                    <div class="">使用以下方式快速註冊</div>
+                    <div class="quickLoginLine"></div>
+                </div>
+                <button class="btn btn-primary w-100 mb-4">
+                    <i class="bi bi-facebook"></i>
+                    Facebook</button>
+                <button class="btn btn-success w-100">
+                    <i class="bi bi-line"></i>
+                    Line</button>
+            </div>
+            
+        </div>
+        <div class="login-bg"></div>
+    </div>
+
+    <div class="menu">
+        <div class="menu-box ps-a">
+            <div class="container ps-r">
+
+                <div class="menu-title">
+                    分類
+                </div>
+
+                <div class="menu-close ps-a">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <div class="line">
+
+                </div>
+                <form class="d-flex my-4" role="search">
+                    <input class="form-control" type="search" placeholder="找桌遊" aria-label="Search">
+                </form>
+
+                <div class="row justify-content-evenly">
+                    <div class="col-5 text-center mb-4">
+                        <img src="https://picsum.photos/seed/{60}picsum/300/300" alt="" class="w-100 menu-img">
+                        商品總覽
+                    </div>
+                    <div class="col-5 text-center mb-4">
+                        <img src="https://picsum.photos/seed/{10}picsum/300/300" alt="" class="w-100 menu-img">
+                        輕鬆派對
+                    </div>
+                    <div class="col-5 text-center mb-4">
+                        <img src="https://picsum.photos/seed/{20}picsum/300/300" alt="" class="w-100 menu-img">
+                        策略陣營
+                    </div>
+                    <div class="col-5 text-center mb-4">
+                        <img src="https://picsum.photos/seed/{30}picsum/300/300" alt="" class="w-100 menu-img">
+                        破冰大師
+                    </div>
+                    <div class="col-5 text-center">
+                        <img src="https://picsum.photos/seed/{40}picsum/300/300" alt="" class="w-100 menu-img">
+                        闔家同樂
+                    </div>
+                    <div class="col-5 text-center">
+                        <img src="https://picsum.photos/seed/{50}picsum/300/300" alt="" class="w-100 menu-img">
+                        台灣本土
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top nav-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand" href="index.html">Nav</a>
+
+            <div class="collapse navbar-collapse navbar-sm" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">關於我們</a>
@@ -43,51 +180,64 @@
                     <li>
                         <div class="nav-login nav-link">登入</div>
                     </li>
+                    <li class="shoppingCart-nav">
+                        <span class="glyphicon glyphicon-shopping-cart my-cart-icon nav-link bi bi-cart">
+                            <span class="badge badge-notify my-cart-badge"></span>
+                        </span>
+                    </li>
 
-
-                    <div class="login">
-                        <div class="login-box">
-                            <div class="login-banner">
-                                <div class="login-close">
-                                    <i class="bi bi-x-lg"></i>
-                                </div>
-                            </div>
-                            <div class="email my-2 p-2">
-                                <label for="userEmail" class="form-label">帳號</label>
-                                <input type="email" class="form-control" id="userEmail">
-                            </div>
-                            <div class="password my-2 p-2">
-                                <label for="userPassword" class="form-label">密碼</label>
-                                <input type="password" class="form-control" id="userPassword">
-                            </div>
-                            <button type="submit" class="btn btn-secondary btn-login my-2 d-flex mx-auto p-2">登入</button>
-                        </div>
-                    </div>
-
-<!-- 
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered ">
-                            <div class="modal-content p-2">
-                                <div class="email my-2">
-                                    <label for="userEmail" class="form-label">帳號</label>
-                                    <input type="email" class="form-control" id="userEmail">
-                                </div>
-                                <div class="password my-2">
-                                    <label for="userPassword" class="form-label">密碼</label>
-                                    <input type="password" class="form-control" id="userPassword">
-                                </div>
-                                <button type="submit" class="btn btn-secondary my-2 d-flex mx-auto">登入</button>
-                            </div>
-                        </div>
-                    </div> -->
+                    
                 </ul>
                 
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="找桌遊" aria-label="Search">
                 </form>
             </div>
+
+            <div class="search-sm ms-auto">
+                <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="找桌遊" aria-label="Search">
+                </form>
+            </div>
+            
         </div>
     </nav>
+
+
+    <nav class="bg-dark navbar-dark fixed-bottom nav-bottom">
+        <div class="container-fluid">
+            <div class="row row-cols-4">
+                <div class="col text-light nav-sm-item text-center nav-login">
+                    <i class="bi bi-person-circle"></i>
+                    <p class="nav-link">個人</p>
+
+                    
+                </div>
+                <div class="col text-light nav-sm-item text-center">
+                    <i class="bi bi-house-door-fill"></i>
+
+                    <a href="index.html" class="home text-light d-block">首頁</a>
+
+                    
+
+                </div>
+                <div class="col text-light nav-sm-item text-center menu-btn">
+                    <i class="bi bi-justify"></i>
+                    <p>分類</p>
+
+                </div>
+                <div class="col text-light nav-sm-item text-center">
+                    <span class="glyphicon glyphicon-shopping-cart my-cart-icon bi bi-cart">
+                        <span class="badge badge-notify my-cart-badge"></span>
+                    </span>
+                    <p>購物車</p>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
 
 
     <div id="carouselExampleCaptions" class="carousel slide fix-space" data-bs-ride="carousel">
@@ -137,27 +287,27 @@
     </div>
 
 
-    <div class="container promotion">
+    <div class="container promotion py-4">
         <div class="col-12">
-            <div class="promotion-title mt-4">
+            <div class="promotion-title">
                 <h1 class="py-1 ps-4">
                     促銷活動
                 </h1>
             </div>
             <a href="#" class="">
-                <img src="http://fakeimg.pl/1400x600" alt="" class="mt-4 w-100">
+                <img src="http://fakeimg.pl/1400x600" alt="" class="w-100">
             </a>
             <a href="#" class="">
                 <img src="http://fakeimg.pl/1400x600" alt="" class="mt-4 w-100">
             </a>
             <a href="#" class="">
-                <img src="http://fakeimg.pl/1400x600" alt="" class="my-4 w-100">
+                <img src="http://fakeimg.pl/1400x600" alt="" class="mt-4 w-100">
             </a>
         </div>
     </div>
 
     
-    <div class="container product-cards py-4">
+    <div class="container product-cards pb-4">
         <div class="product-card-title">
             <div class="col-12">
                 <h1 class="py-1 ps-4">
@@ -165,7 +315,7 @@
                 </h1>
             </div>
         </div>
-        <div class="row product-card py-1">
+        <div class="row product-card">
             <div class="col-12 col-md-7">
                 <img src="http://fakeimg.pl/1000x800" alt="" class="w-100">
             </div>
@@ -320,92 +470,11 @@
     </div>
 
 
-    <div class="footer">
+    <div class="footer fix-bottom-space">
         <div class="container py-4">
             <div class="row">
-                <!-- <div class="col-3 footer-link-md d-none">
-                    <div class="list-group">
-                        <div class="list-group-item footer-link-title">A disabled link item</div>
-                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                    </div>
-                </div>
-                <div class="col-3 footer-link-md d-none">
-                    <div class="list-group">
-                        <div class="list-group-item footer-link-title">A disabled link item</div>
-                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                    </div>
-                </div>
-                <div class="col-3 footer-link-md d-none">
-                    <div class="list-group">
-                        <div class="list-group-item footer-link-title">A disabled link item</div>
-                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                    </div>
-                </div>
-                <div class="col-12 footer-link">
-                    <nav class="navbar navbar-dark bg-dark">
-                        <div class="container-fluid">
-                          <div class="navbar-brand">Navbar</div>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-link-btn-1" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="footer-link-btn-1">
-                            <ul class="list-group">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
-                          </div>
-                        </div>
-                      </nav>
-                </div>
-                <div class="col-12 footer-link">
-                    <nav class="navbar navbar-dark bg-dark">
-                        <div class="container-fluid">
-                          <div class="navbar-brand">Navbar</div>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-link-btn-2" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="footer-link-btn-2">
-                            <ul class="list-group">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
-                          </div>
-                        </div>
-                      </nav>
-                </div>
-                <div class="col-12 footer-link">
-                    <nav class="navbar navbar-dark bg-dark">
-                        <div class="container-fluid">
-                          <div class="navbar-brand">Navbar</div>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-link-btn-3" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="footer-link-btn-3">
-                            <ul class="list-group">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
-                          </div>
-                        </div>
-                      </nav>
-                </div> -->
-                <div class="col-12 mt-2">
-                    <div class="copyright text-center mt-4">
+                <div class="col-12">
+                    <div class="copyright text-center">
                         <p>xxx桌遊股份有限公司</p>
                         <p>地址 ： 雲林縣斗六市中山路104巷48號</p>
                         <p>服務時間：週一~六 13：00~:22：00</p>
@@ -425,19 +494,86 @@
 
 
     <script src="bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.mycart-master/js/jquery-2.2.3.min.js"></script>
+    <script src="js/jquery.mycart-master/js/jquery.mycart.js"></script>
     <script>
         $(document).ready(function(){
-            $(".nav-login, .btn-login, .login-close").click(function () {
-                $(".login").slideToggle();
+            $(".nav-login, .login-close").click(function () {
+                $(".login, .nav-top, .nav-bottom").toggle();
             });
-            $(".nav-login").click(function(){
+
+            $(".menu-btn, .menu-close").click(function(){
+                $(".menu, .nav-top, .nav-bottom").toggle();
+            })
+           
+            $(".nav-login, .menu-btn").click(function(){
                 $("body").addClass("scrollProhibit")
             })
-            $(".login-close").click(function(){
+            $(".login-close, .menu-close").click(function(){
                 $("body").removeClass("scrollProhibit")
             })
+
+            $(".register-btn").click(function(){
+                $(".register-content").show(); 
+                $(".register-btn").addClass("bottom-line");
+                $(".login-content").hide(); 
+                $(".login-btn").removeClass("bottom-line");
+            });
+
+            $(".login-btn").click(function(){
+                $(".register-content").hide(); 
+                $(".register-btn").removeClass("bottom-line");
+                $(".login-content").show(); 
+                $(".login-btn").addClass("bottom-line");
+            });
+
+            $(".eye-slash-icon").click(function(){
+                $(".password-input").attr("type","");
+                $(".eye-slash-icon").hide();
+                $(".eye-icon").show()
+            });
+
+            $(".eye-icon").click(function(){
+                $(".password-input").attr("type","password");
+                $(".eye-icon").hide();
+                $(".eye-slash-icon").show()
+            });
+
+
+
         })
+    </script>
+    <script>
+        $(function () {
+
+                var goToCartIcon = function ($addTocartBtn) {
+                    var $cartIcon = $(".my-cart-icon");
+                    var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
+                    
+                }
+
+                $('.my-cart-btn').myCart({
+                    classCartIcon: 'my-cart-icon',
+                    classCartBadge: 'my-cart-badge',
+                    affixCartIcon: true,
+                    checkoutCart: function (products) {
+                        $.each(products, function () {
+                            console.log(this);
+                        });
+                    },
+                    clickOnAddToCart: function ($addTocart) {
+                        goToCartIcon($addTocart);
+                    },
+                    getDiscountPrice: function (products) {
+                        var total = 0;
+                        $.each(products, function () {
+                            total += this.quantity * this.price;
+                        });
+                        return total * 0.95;
+                    }
+                });
+
+            });
     </script>
 
 

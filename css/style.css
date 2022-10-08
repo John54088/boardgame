@@ -1,6 +1,6 @@
-.scrollProhibit{
-    overflow-y: hidden;
-    overflow-x: hidden;
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
 }
 .footer{
     background-color: #777;
@@ -22,44 +22,177 @@
 .nav-login{
     cursor: pointer;
 }
-.login{
+.login, .menu{
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     display: none;
+    z-index: 8;
 }
-.login-box{
-    width: 70vw;
-    max-width: 500px;
-    height: 310px;
-    border-radius: 20px;
+.login-box, .menu-box{
+    width: 100%;
+    height: 100vh;
     background-color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: calc(50vh - 175px);
+    left: 0;
+    top: 0;
 }
-.login-banner{
-    height: 50px;
-    background-color: #777;
-    border-radius: 20px 20px 0 0;
-    position: relative;
+.scrollProhibit{
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
-.login-close{
+.login-bg{
+    width: 100%;
+    height: 100%;
+}
+.login-close, .menu-close{
+    top: 9.25px;
     right: 16px;
-    top: 13px;
-    position: absolute;
-    color: #fff;
-    font-size: large;
+    font-size: 25px;
 }
 .product-title{
     font-size: 20px;
     padding: 15px 20px;
     margin: 0;
 }
+.bread a{
+    text-decoration: none;
+}
+.register{
+    text-decoration: none;
+    margin: 0 16px;
+}
+.forgotPassword{
+    text-decoration: none;
+}
+.product-box a{
+    text-decoration: none;
+    color: #333;
+}
+.ps-r{
+    position: relative;
+}
+.ps-a{
+    position: absolute;
+}
+.ps-f{
+    position: fixed;
+}
+.addShoppingCart{
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+    visibility: hidden;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.card-pic{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: contain;
+    padding: 50%;
+}
+.card-pic:hover .addShoppingCart{
+    visibility: visible;
+    top: 85%;
+}
+.text h2 .productDescription h2{
+    font-size: 25px;
+    font-weight: 900;
+}
+.annotation{
+    font-size: 15px;
+}
+.price{
+    font-size: 20px;
+}
+.productDescription p{
+    font-size: 15px;
+    line-height: 2.5;
+}
+.line{
+    height: 1px;
+    background-color: #777;
+}
+.card-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.my-cart-btn{
+    cursor: pointer;
+}
+.shoppingCart{
+    right: 10px;
+    bottom: 10px;
+    z-index: 5;
+}
+.shoppingCartBg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #777;
+}
+.shoppingCart-sm{
+    font-size: 25px;
+    color: #999;
+}
+.nav-sm-item i{
+    font-size: 25px;
+}
+.nav-sm-item a{
+    text-decoration: none;
+}
+.nav-sm-item p, .nav-sm-item a{
+    font-size: 15px;
+}
+.nav-sm-item span{
+    font-size: 25px;
+}
+.badge{
+    padding: 0;
+    font-size: 10px !important;
+}
+.quickLoginLine{
+    flex-grow: 1;
+    height: 1px;
+    background-color: #777;
+}
+.register-btn, .login-btn{
+    padding: 15px 20px;
+}
+.bottom-line{
+    border-bottom: #000 solid;
+}
+.register-content{
+    display: none;
+}
+.eye-slash-icon, .eye-icon{
+    top: calc(45px + 1.5rem);
+    right: 11px;
+}
+.eye-icon{
+    display: none;
+}
+.menu-title{
+    padding: 15px 0;
+    text-align: center;
+}
+.menu-box .col-5{
+    padding: 0;
+}
+
 @media screen and (min-width: 768px){
     .product-card .col-12:nth-child(even){
         margin-top: -100px;
@@ -73,9 +206,45 @@
     .about .col-12:nth-last-child(2){
         margin-top: -200px;
     }
+    .project{
+        display: none;
+    }
+}
+@media screen and (min-width:992px){
+    .search-sm{
+        display: none;
+    }
+    .nav-bottom{
+        display: none;
+    }
+}
+@media screen and (min-width:1200px){
+    .addShoppingCart-sm{
+        display: none;
+    }
 }
 @media screen and (max-width: 767px){
     .aside{
+        display: none;
+    }
+    .text{
+        padding: 0;
+        margin-top: 20px;
+    }
+    .search-sm{
+        flex-grow: 1;
+    }
+}
+@media screen and (max-width:991px){
+    .navbar-sm{
+        display: none;
+    }
+    .fix-bottom-space{
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width: 1199px){
+    .addShoppingCart{
         display: none;
     }
 }

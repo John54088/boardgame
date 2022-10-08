@@ -19,6 +19,11 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Navbar</a>
+            <div class="shoppingCart-sm">
+                <span class="glyphicon glyphicon-shopping-cart my-cart-icon bi bi-cart">
+                    <span class="badge badge-notify my-cart-badge"></span>
+                </span>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,15 +49,14 @@
                     <li>
                         <div class="nav-login nav-link">登入</div>
                     </li>
-
+                    <li>
+                        <span class="glyphicon glyphicon-shopping-cart my-cart-icon nav-link bi bi-cart">
+                            <span class="badge badge-notify my-cart-badge"></span>
+                        </span>
+                    </li>
 
                     <div class="login">
-                        <div class="login-box">
-                            <div class="login-banner">
-                                <div class="login-close">
-                                    <i class="bi bi-x-lg"></i>
-                                </div>
-                            </div>
+                        <div class="login-box ps-a">
                             <div class="email my-2 p-2">
                                 <label for="userEmail" class="form-label">帳號</label>
                                 <input type="email" class="form-control" id="userEmail">
@@ -61,8 +65,13 @@
                                 <label for="userPassword" class="form-label">密碼</label>
                                 <input type="password" class="form-control" id="userPassword">
                             </div>
-                            <button type="submit" class="btn btn-secondary btn-login my-2 d-flex mx-auto p-2">登入</button>
+                            <div class="d-flex justify-content-around">
+                                <a href="#" class="d-inline-block register p-2 my-2">註冊</a>
+                                <button type="submit" class="btn btn-secondary btn-login my-2 p-2">登入</button>
+                                <a href="#" class="d-inline-block forgotPassword p-2 my-2">忘記密碼</a>
+                            </div>
                         </div>
+                        <div class="login-bg"></div>
                     </div>
 
 <!-- 
@@ -237,7 +246,7 @@
                         </div>
                       </nav>
                 </div> -->
-                <div class="col-12 mt-2">
+                <div class="col-12">
                     <div class="copyright text-center mt-4">
                         <p>xxx桌遊股份有限公司</p>
                         <p>地址 ： 雲林縣斗六市中山路104巷48號</p>
@@ -255,19 +264,52 @@
 
 
     <script src="bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.mycart-master/js/jquery-2.2.3.min.js"></script>
+    <script src="js/jquery.mycart-master/js/jquery.mycart.js"></script>
     <script>
         $(document).ready(function(){
-            $(".nav-login, .btn-login, .login-close").click(function () {
+            $(".nav-login, .btn-login, .login-bg").click(function () {
                 $(".login").slideToggle();
             });
             $(".nav-login").click(function(){
                 $("body").addClass("scrollProhibit")
             })
-            $(".login-close").click(function(){
+            $(".login-bg").click(function(){
                 $("body").removeClass("scrollProhibit")
             })
         })
+    </script>
+    <script>
+        $(function () {
+
+                var goToCartIcon = function ($addTocartBtn) {
+                    var $cartIcon = $(".my-cart-icon");
+                    var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
+                    
+                }
+
+                $('.my-cart-btn').myCart({
+                    classCartIcon: 'my-cart-icon',
+                    classCartBadge: 'my-cart-badge',
+                    affixCartIcon: true,
+                    checkoutCart: function (products) {
+                        $.each(products, function () {
+                            console.log(this);
+                        });
+                    },
+                    clickOnAddToCart: function ($addTocart) {
+                        goToCartIcon($addTocart);
+                    },
+                    getDiscountPrice: function (products) {
+                        var total = 0;
+                        $.each(products, function () {
+                            total += this.quantity * this.price;
+                        });
+                        return total * 0.95;
+                    }
+                });
+
+            });
     </script>
 
 
