@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>xxx桌遊</title>
+    <link rel="icon" href="pic/LOGO-1.jpg">
     <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,34 +15,28 @@
 
 
   <body>
+
     
-    <div class="login">
-        <div class="login-box ps-a">
-            <div class="login-box-banner d-flex ps-r">
-                <div class="register-btn ms-auto">
+    <div class="sm-login">
+        <div class="sm-login-box ps-a">
+            <div class="sm-login-box-banner d-flex ps-r text-light">
+                <div class="sm-register-btn ms-auto">
                     註冊
                 </div>
-                <div class="login-btn me-auto bottom-line">
+                <div class="sm-login-btn me-auto bottom-line">
                     登入
                 </div>
-                <div class="login-close text-dark ps-a">
+                <div class="sm-login-close ps-a">
                     <i class="bi bi-x-lg"></i>
                 </div>
             </div>
 
-            
 
-            <div class="login-content container">
+            <div class="sm-login-content container">
 
-                <div class="line"></div>
+                <div class="line"></div> 
 
-
-
-
-
-                    
-
-                
+             
                 <form class="keyin mb-4 ps-r">
 
                     <input type="email" class="form-control my-4" id="userEmail" required  placeholder="請輸入Email/手機號碼">
@@ -51,21 +46,19 @@
                     <i class="bi bi-eye-slash eye-slash-icon ps-a"></i>
                     <i class="bi bi-eye eye-icon ps-a"></i>
 
-                    <button type="submit" class="btn btn-secondary btn-login w-100 mt-4">登入</button>
+                    <button type="submit" class="btn btn-secondary w-100 mt-4">登入</button>
 
                 </form>
-
-
                     
-                
+          
                 <div class=" mb-4 text-end">
-                    <a href="#" class="d-inline-block forgotPassword">忘記密碼</a>
+                    <a href="#" class="d-inline-block forgotPassword text-light">忘記密碼</a>
                 </div>
                 
 
                 <div class="useQuickLogin d-flex align-items-center mb-4">
                     <div class="quickLoginLine"></div>
-                    <div class="">使用以下方式快速登入</div>
+                    <div class="text-light">使用以下方式快速登入</div>
                     <div class="quickLoginLine"></div>
                 </div>
 
@@ -79,13 +72,89 @@
 
             </div>
 
-            <div class="register-content container">
+            <div class="sm-register-content container">
                 <div class="line"></div>
                 <div class="phone my-4">
-                    <div>TW +886</div>
+                    <div class="text-light">TW +886</div>
                     <input type="phone" class="form-control" id="userPhone" placeholder="0912 345 678">
                 </div>
                 <div class="continue mb-4">
+                    <button class="btn btn-secondary w-100">繼續</button>
+                </div>
+                <div class="useQuickLogin d-flex align-items-center mb-4">
+                    <div class="quickLoginLine"></div>
+                    <div class="text-light">使用以下方式快速註冊</div>
+                    <div class="quickLoginLine"></div>
+                </div>
+                <button class="btn btn-primary w-100 mb-4">
+                    <i class="bi bi-facebook"></i>
+                    Facebook</button>
+                <button class="btn btn-success w-100">
+                    <i class="bi bi-line"></i>
+                    Line</button>
+            </div>
+            
+        </div>
+ 
+    </div>
+
+
+    <div class="login">
+        <div class="login-box ps-a bg-333">
+            <div class="login-box-banner d-flex ps-r">
+                <div class="register-btn ms-auto text-light">
+                    註冊
+                </div>
+                <div class="login-btn me-auto bottom-line text-light">
+                    登入
+                </div>
+            </div>
+            <div class="login-content container">
+
+                <div class="line"></div> 
+
+             
+                <form class="keyin mb-4 ps-r">
+
+                    <input type="email" class="form-control my-4" id="userEmail" required  placeholder="請輸入Email/手機號碼">
+
+                    <input type="password" class="form-control password-input" id="userPassword" required placeholder="請輸入密碼(6~20英數字)">
+
+                    <i class="bi bi-eye-slash eye-slash-icon ps-a"></i>
+                    <i class="bi bi-eye eye-icon ps-a"></i>
+
+                    <button type="submit" class="btn btn-secondary w-100 mt-4">登入</button>
+
+                </form>
+                    
+          
+                <div class=" mb-4 text-end">
+                    <a href="#" class="d-inline-block forgotPassword text-light">忘記密碼</a>
+                </div>
+                
+
+                <div class="useQuickLogin d-flex align-items-center mb-4">
+                    <div class="quickLoginLine"></div>
+                    <div class=" text-light">使用以下方式快速登入</div>
+                    <div class="quickLoginLine"></div>
+                </div>
+
+                <button class="btn btn-primary w-100 mb-4">
+                    <i class="bi bi-facebook"></i>
+                    Facebook</button>
+                <button class="btn btn-success w-100">
+                    <i class="bi bi-line"></i>
+                    Line</button>
+
+
+            </div>       
+            <div class="register-content container">
+                <div class="line"></div>
+                <div class="phone">
+                    <div>TW +886</div>
+                    <input type="phone" class="form-control" id="userPhone" placeholder="0912 345 678">
+                </div>
+                <div class="continue">
                     <button class="btn btn-secondary w-100">繼續</button>
                 </div>
                 <div class="useQuickLogin d-flex align-items-center mb-4">
@@ -100,87 +169,219 @@
                     <i class="bi bi-line"></i>
                     Line</button>
             </div>
-            
         </div>
-        <div class="login-bg"></div>
+        <div class="login-bg">
+
+        </div>
     </div>
 
     <div class="menu">
         <div class="menu-box ps-a">
             <div class="container ps-r">
 
-                <div class="menu-title">
+                <div class="menu-title text-light">
                     分類
                 </div>
 
-                <div class="menu-close ps-a">
+                <div class="menu-close ps-a text-light">
                     <i class="bi bi-x-lg"></i>
                 </div>
 
                 <div class="line">
 
                 </div>
-                <form class="d-flex my-4" role="search">
-                    <input class="form-control" type="search" placeholder="找桌遊" aria-label="Search">
-                </form>
 
-                <div class="row justify-content-evenly">
-                    <div class="col-5 text-center mb-4">
-                        <img src="https://picsum.photos/seed/{60}picsum/300/300" alt="" class="w-100 menu-img">
-                        商品總覽
-                    </div>
-                    <div class="col-5 text-center mb-4">
-                        <img src="https://picsum.photos/seed/{10}picsum/300/300" alt="" class="w-100 menu-img">
-                        輕鬆派對
-                    </div>
-                    <div class="col-5 text-center mb-4">
-                        <img src="https://picsum.photos/seed/{20}picsum/300/300" alt="" class="w-100 menu-img">
-                        策略陣營
-                    </div>
-                    <div class="col-5 text-center mb-4">
-                        <img src="https://picsum.photos/seed/{30}picsum/300/300" alt="" class="w-100 menu-img">
-                        破冰大師
-                    </div>
-                    <div class="col-5 text-center">
-                        <img src="https://picsum.photos/seed/{40}picsum/300/300" alt="" class="w-100 menu-img">
-                        闔家同樂
-                    </div>
-                    <div class="col-5 text-center">
-                        <img src="https://picsum.photos/seed/{50}picsum/300/300" alt="" class="w-100 menu-img">
-                        台灣本土
+                <div class="menuBox">
+                    <div class="row justify-content-evenly mx-0">
+                        <a class="col-5 text-center text-light" href="about.html">
+                            <img src="pic/LOGO-2.jpg" alt="" class="w-100 menu-img">
+                            <h4 class="my-2">
+                                關於我們
+                            </h4>
+                            
+                        </a>
+                        <a class="col-5 text-center text-light" href="all-product-1.html">
+                            <img src="https://picsum.photos/seed/{60}picsum/300/300" alt="" class="w-100 menu-img">
+                            <h4 class="my-2">
+                                商品總覽
+                            </h4>
+                            
+                        </a>
+                        <a class="col-5 text-center text-light" href="product1-1.html">
+                            <img src="https://picsum.photos/seed/{10}picsum/300/300" alt="" class="w-100 menu-img">
+                            <h4 class="my-2">
+                                輕鬆派對
+                            </h4>
+                            
+                        </a>
+                        <a class="col-5 text-center text-light" href="product1-1.html">
+                            <img src="https://picsum.photos/seed/{20}picsum/300/300" alt="" class="w-100 menu-img">
+                            <h4 class="my-2">
+                                策略陣營
+                            </h4>
+                            
+                        </a>
+                        <a class="col-5 text-center text-light" href="product1-1.html">
+                            <img src="https://picsum.photos/seed/{30}picsum/300/300" alt="" class="w-100 menu-img">
+                            <h4 class="my-2">
+                                破冰大師
+                            </h4>
+                            
+                        </a>
+                        <a class="col-5 text-center text-light" href="product1-1.html">
+                            <img src="https://picsum.photos/seed/{40}picsum/300/300" alt="" class="w-100 menu-img">
+                            <h4 class="my-2">
+                                闔家同樂
+                            </h4>
+                            
+                        </a>
                     </div>
                 </div>
+                
 
             </div>
         </div>
     </div>
 
+    <div class="search">
+        <div class="search-box ps-a">
+            <div class="container ps-r">
+                <div class="search-title text-light">
+                    搜尋
+                </div>
+                <div class="search-close ps-a text-light">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <div class="line"></div>
+                <form class="d-flex my-4" role="search">
+                    <input class="form-control" type="search" placeholder="找桌遊" aria-label="Search" id="searchTableGame">
+                </form>
+                <div class="searchTableBox">
+                    <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="col-4 text-light">分類</th>
+                        <th scope="col" class="col-4 text-light">名稱</th>
+                        <th scope="col" class="col-4"></th>
+                      </tr>
+                    </thead>
+                    <tbody class="align-middle" id="searchTable">
+                      <tr>
+                        <td class="text-light">策略陣營</td>
+                        <td class="text-light">抵抗組織 阿瓦隆</td>
+                        <td>
+                            <img src="pic/original_.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">策略陣營</td>
+                        <td class="text-light">風聲</td>
+                        <td>
+                            <img src="pic/e07194cf402928ab1732f0b4ee746f1b.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">策略陣營</td>
+                        <td class="text-light">間諜危機</td>
+                        <td>
+                            <img src="pic/pic2254217_lg.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">策略陣營</td>
+                        <td class="text-light">機密代號</td>
+                        <td>
+                            <img src="pic/Codenames_3D.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">策略陣營</td>
+                        <td class="text-light">血契獵殺</td>
+                        <td>
+                            <img src="https://picsum.photos/seed/{5}picsum/150/150" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">策略陣營</td>
+                        <td class="text-light">血契獵殺</td>
+                        <td>
+                            <img src="pic/5ab8f1bce92abf9f316d91e6_Blood_Bound_Box_3D.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">輕鬆派對</td>
+                        <td class="text-light">出包魔法師</td>
+                        <td>
+                            <img src="pic/Q021-3D.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">輕鬆派對</td>
+                        <td class="text-light">傳情畫意</td>
+                        <td>
+                            <img src="pic/original_01.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">輕鬆派對</td>
+                        <td class="text-light">終極審判 電車難題</td>
+                        <td>
+                            <img src="pic/1598868475-3931480533-g_wn.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">輕鬆派對</td>
+                        <td class="text-light">黃牌</td>
+                        <td>
+                            <img src="pic/68ca464f539388840937ce4b92a9487d.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top nav-sm-top">
+        <div class="container-fluid">
+            <div class="navbar-brand mx-auto">
+                <img src="pic/LOGO-1.jpg" alt="" class="logo">
+            </div>
+        </div>
+    </nav>
+
+
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top nav-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Nav</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="pic/LOGO-1.jpg" alt="" class="logo">
+            </a>
 
             <div class="collapse navbar-collapse navbar-sm" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">關於我們</a>
+                        <a class="nav-link text-light fs-20" href="about.html">關於我們</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle text-light fs-20" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             所有商品
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="all-product-1.html">商品總覽</a></li>
-                            <li><a class="dropdown-item" href="product1-1.html">輕鬆派對</a></li>
-                            <li><a class="dropdown-item" href="product2-1.html">策略陣營</a></li>
-                            <li><a class="dropdown-item" href="product3-1.html">破冰大師</a></li>
-                            <li><a class="dropdown-item" href="product4-1.html">闔家同樂</a></li>
+                        <ul class="dropdown-menu bg-333">
+                            <li><a class="dropdown-item text-light" href="all-product-1.html">商品總覽</a></li>
+                            <li><a class="dropdown-item text-light" href="product1-1.html">輕鬆派對</a></li>
+                            <li><a class="dropdown-item text-light" href="product2-1.html">策略陣營</a></li>
+                            <li><a class="dropdown-item text-light" href="product3-1.html">破冰大師</a></li>
+                            <li><a class="dropdown-item text-light" href="product4-1.html">闔家同樂</a></li>
                         </ul>
                     </li>
                     <li>
-                        <div class="nav-login nav-link">登入</div>
+                        <div class="nav-login nav-link text-light fs-20">登入</div>
                     </li>
-                    <li class="shoppingCart-nav">
+                    <li class="shoppingCart-nav text-light">
                         <span class="glyphicon glyphicon-shopping-cart my-cart-icon nav-link bi bi-cart">
                             <span class="badge badge-notify my-cart-badge"></span>
                         </span>
@@ -193,39 +394,39 @@
                     <input class="form-control me-2" type="search" placeholder="找桌遊" aria-label="Search">
                 </form>
             </div>
-
-            <div class="search-sm ms-auto">
-                <form class="d-flex" role="search">
-                    <input class="form-control" type="search" placeholder="找桌遊" aria-label="Search">
-                </form>
-            </div>
             
         </div>
     </nav>
 
 
-    <nav class="bg-dark navbar-dark fixed-bottom nav-bottom">
+    <nav class="bg-dark navbar-dark fixed-bottom nav-sm-bottom">
         <div class="container-fluid">
-            <div class="row row-cols-4">
-                <div class="col text-light nav-sm-item text-center nav-login">
+            <div class="row row-cols-5">
+                <a class="col text-light nav-sm-item text-center" href="index.html">
+                    <i class="bi bi-house-door-fill"></i>
+
+                    <div class="home text-light d-block">首頁</div>
+
+                    
+
+                </a>
+                <div class="col text-light nav-sm-item text-center nav-sm-login">
                     <i class="bi bi-person-circle"></i>
                     <p class="nav-link">個人</p>
 
                     
-                </div>
-                <div class="col text-light nav-sm-item text-center">
-                    <i class="bi bi-house-door-fill"></i>
-
-                    <a href="index.html" class="home text-light d-block">首頁</a>
-
-                    
-
                 </div>
                 <div class="col text-light nav-sm-item text-center menu-btn">
                     <i class="bi bi-justify"></i>
                     <p>分類</p>
 
                 </div>
+
+                <div class="col search-btn text-light nav-sm-item text-center">
+                    <i class="bi bi-search"></i>
+                    <p>搜尋</p>
+                </div>
+
                 <div class="col text-light nav-sm-item text-center">
                     <span class="glyphicon glyphicon-shopping-cart my-cart-icon bi bi-cart">
                         <span class="badge badge-notify my-cart-badge"></span>
@@ -253,25 +454,19 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="5000">
-                <img src="http://fakeimg.pl/1400x600" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                <img src="pic/banner-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="pic/banner-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-mck">
+
+
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="5000">
-                <img src="http://fakeimg.pl/1400x600" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-                <img src="http://fakeimg.pl/1400x600" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
+                <img src="pic/banner-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block"></div>
             </div>
         </div>
 
@@ -294,14 +489,14 @@
                     促銷活動
                 </h1>
             </div>
-            <a href="#" class="">
-                <img src="http://fakeimg.pl/1400x600" alt="" class="w-100">
+            <a href="fall.html" class="">
+                <img src="pic/banner-1.jpg" alt="" class="w-100">
             </a>
-            <a href="#" class="">
-                <img src="http://fakeimg.pl/1400x600" alt="" class="mt-4 w-100">
+            <a href="puck.html" class="">
+                <img src="pic/banner-2.jpg" alt="" class="mt-4 w-100">
             </a>
-            <a href="#" class="">
-                <img src="http://fakeimg.pl/1400x600" alt="" class="mt-4 w-100">
+            <a href="famliy.html" class="">
+                <img src="pic/banner-3.jpg" alt="" class="mt-4 w-100">
             </a>
         </div>
     </div>
@@ -317,153 +512,224 @@
         </div>
         <div class="row product-card">
             <div class="col-12 col-md-7">
-                <img src="http://fakeimg.pl/1000x800" alt="" class="w-100">
+                <a href="abracaWhat.html">
+                    <img src="pic/Q021-3D.jpg" alt="" class="w-100">
+                </a> 
             </div>
             <div class="col-12 col-md-7 ms-auto mb-2">
                 <div class="text">
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="product-title">
+                        <div class="accordion-item bg-333">
+                            <h2 class="product-title text-light">
                                 出包魔法師
                             </h2>
                         </div>
-                        <div class="accordion-item"> 
-                          <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product1-1" aria-expanded="true" aria-controls="collapseOne">
-                              商品描述
-                            </button>
-                          </h2>
-                          <div id="product1-1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#product1-1" aria-expanded="true" aria-controls="collapseOne">
+                                    商品描述
+                                </button>
+                            </h2>
+                            <div id="product1-1" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    傳說中，
+                                    第一個登上傳奇大魔法師之塔的魔法師，
+                                    他的偉大將會名留青史，
+                                    對此，
+                                    一群魔法師誰也不讓誰，
+                                    為了率先登上塔頂，
+                                    施放咒語試圖解決對方，
+                                    不料，
+                                    不知為何大家的咒語頻頻出包，
+                                    心急如焚的魔法師們才顧不了這麼多，
+                                    一場咒語大亂鬥就此展開！
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product1-2" aria-expanded="false" aria-controls="collapseTwo">
-                              玩法說明
-                            </button>
-                          </h2>
-                          <div id="product1-2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#product1-2" aria-expanded="false" aria-controls="collapseTwo">
+                                    規則簡介
+                                </button>
+                            </h2>
+                            <div id="product1-2" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                <div class="accordion-body">
+                                    遊戲開始時，
+                                    每位玩家面前放置五塊咒語石，
+                                    大家都知道別人擁有什麼咒語，
+                                    就是不知道自己的，
+                                    玩家必須根據檯面上已知的咒語石，
+                                    來推測自己擁有哪些咒語，
+                                    有些咒語可以幫自己增加生命，
+                                    有些則可以攻擊對手！
+                                    
+                                    但是注意囉！
+                                    如果你唸到自己所沒有的咒語石，
+                                    你就會失去一個生命值！（也可能更嚴重！）
+                                    
+                                    每輪遊戲最快將自己面前咒語石使用完畢的玩家，
+                                    就可以更接近塔頂一點，
+                                    而失去生命的玩家雖然下一輪就會復活，
+                                    但接下來可就要急起直追了！
+                                    
+                                    第一個抵達塔頂的玩家就是勝利者！
+                                    自豪吧！你是出包最少的魔法師！
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product1-3" aria-expanded="false" aria-controls="collapseThree">
-                              推薦指數
-                            </button>
-                          </h2>
-                          <div id="product1-3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#product1-3" aria-expanded="false" aria-controls="collapseThree">
+                                    推薦指數
+                                </button>
+                            </h2>
+                            <div id="product1-3" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                                <div class="accordion-body">
+                                    運氣與技巧兼具的遊戲，可以天胡起手直接結束遊戲，也可以一步步推敲自己手牌當個智商型玩家。 <br><br>
+                                    推薦指數 <b>5</b> (時程短，節奏快，三五好友、全家老小都可玩)
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="row product-card">
             <div class="col-12 col-md-7 ms-auto">
-                <img src="http://fakeimg.pl/1000x800" alt="" class="w-100">
+                <a href="onceUponTime.html">
+                    <img src="pic/5ab909d6c6b5aa0d60111e79_Onc.jpg" alt="" class="w-100">
+                </a>
             </div>
             <div class="col-12 col-md-7 mb-2">
                 <div class="text">
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="product-title">
+                        <div class="accordion-item bg-333">
+                            <h2 class="product-title text-light">
                                 從前從前
                             </h2>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product2-1" aria-expanded="true" aria-controls="collapseOne">
-                              商品描述
-                            </button>
-                          </h2>
-                          <div id="product2-1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#product2-1" aria-expanded="true" aria-controls="collapseOne">
+                                    商品描述
+                                </button>
+                            </h2>
+                            <div id="product2-1" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    壯烈的冒險？浪漫的愛情？惡毒的詛咒？說個獨屬於你的奇幻冒險故事！
+                                    
+                                    
+                                    從前從前…是一款說故事紙牌遊戲，提供許多童話故事中常見的元素，例如：王子、森林或仙女等等?，鼓勵玩家用這些關鍵字共同創造有趣的故事。
+                                    
+                                    
+                                    一名玩家擔任說書人開始說故事，故事中要包含他的故事卡上的關鍵字，並將故事合理地導向他手中結局卡上的結局。其它玩家則要使用手牌打斷說書人，並成為新的說書人，繼續說故事。最後的贏家是先把手上故事卡用完、並將故事帶到自己結局上的玩家。
+                                    
+                                    
+                                    但本遊戲的樂趣不是在於獲勝，而是在一起說故事中獲得樂趣！
+                                    
+                                    
+                                    這個遊戲不但可以訓練英文字彙，而且可以訓練邏輯思考，並在遊戲中獲得更多樂趣；無論是大人或小孩，均富教育與互動同樂！
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product2-2" aria-expanded="false" aria-controls="collapseTwo">
-                              玩法說明
-                            </button>
-                          </h2>
-                          <div id="product2-2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#product2-2" aria-expanded="false" aria-controls="collapseTwo">
+                                    規則簡介
+                                </button>
+                            </h2>
+                            <div id="product2-2" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                <div class="accordion-body">
+                                    說故事者利用手上的故事卡說故事，
+                                    此故事卡的元素必須在故事中有一定的重要性，
+                                    講到此元素後才能出對應的故事卡，但是提及時不一定要用卡片上的文字
+                                    （例如：國王生了一個男嬰，即可使用「王子」），
+                                    嚴禁只為了出現在故事裡而無意義的提及
+                                    （例如：他在旅途中看見森林、馬、廢墟、仙女……），
+                                    基本上一句話只能打出一張故事卡。
+                                    當手上的故事卡用完之後，才可以接結局卡，先接完自己結局者獲勝。
+                                    【說故事權轉移方式】被中斷故事者須加抽一張故事卡
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product2-3" aria-expanded="false" aria-controls="collapseThree">
-                              推薦指數
-                            </button>
-                          </h2>
-                          <div id="product2-3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#product2-3" aria-expanded="false" aria-controls="collapseThree">
+                                    推薦指數
+                                </button>
+                            </h2>
+                            <div id="product2-3" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                                <div class="accordion-body">
+                                    上下限極高的遊戲，根據這局遊戲玩家的想像力，你可以體驗一場像是哈利波特的奇幻冒險，抑或是聽一個小學生星期天晚上寫的枯燥周記。 <br><br>
+                                    推薦指數 <b>3~4.5</b> (故事大多時候都不盡理想，別灰心，說不定下一個暢銷小說就在下個故事裡)
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="row product-card">
             <div class="col-12 col-md-7">
-                <img src="http://fakeimg.pl/1000x800" alt="" class="w-100">
+                <a href="blackList.html">
+                    <img src="pic/e07194cf402928ab1732f0b4ee746f1b.jpg" alt="" class="w-100">
+                </a>
             </div>
             <div class="col-12 col-md-7 ms-auto">
                 <div class="text">
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="product-title">
+                        <div class="accordion-item bg-333">
+                            <h2 class="product-title text-light">
                                 風聲 黑名單
                             </h2>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product3-1" aria-expanded="true" aria-controls="collapseOne">
-                              商品描述
-                            </button>
-                          </h2>
-                          <div id="product3-1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#product3-1" aria-expanded="true" aria-controls="collapseOne">
+                                    商品描述
+                                </button>
+                            </h2>
+                            <div id="product3-1" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    改編自同名電影風聲，需要有一定的組織能力才能夠上手的策略紙牌遊戲，如果對電影有一定的了解，可以更快速地進入遊戲。
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product3-2" aria-expanded="false" aria-controls="collapseTwo">
-                              玩法說明
-                            </button>
-                          </h2>
-                          <div id="product3-2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#product3-2" aria-expanded="false" aria-controls="collapseTwo">
+                                    規則簡介
+                                </button>
+                            </h2>
+                            <div id="product3-2" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                <div class="accordion-body">
+                                    《風聲 黑名單》中分為兩大陣營(潛伏與軍情)，玩家分別扮演兩大陣營中的間諜角色，另有其他人扮演路人(醬油)，玩家必須設法將有利於自身陣營的情報傳遞到同伴手中，並讓同伴收下情報，這當中穿插著許多虛假的情報，是否接收情報，就要靠著玩家自己的判斷與跟隊友之間的默契。
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product3-3" aria-expanded="false" aria-controls="collapseThree">
-                              推薦指數
-                            </button>
-                          </h2>
-                          <div id="product3-3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#product3-3" aria-expanded="false" aria-controls="collapseThree">
+                                    推薦指數
+                                </button>
+                            </h2>
+                            <div id="product3-3" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                                <div class="accordion-body">
+                                    規則十分複雜，時常玩到一半還要去翻說明書，嚴謹的規則是用來約束靈活多變化的角色，26張角色牌皆有不同的能力，縱使拿到比較弱的角色，也能夠藉由與隊友配合達到意想不到的效果。 <br><br>
+                                    推薦指數 <b>4</b> (搞懂規則後就一個字，齁ㄙㄥˋ)
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -474,8 +740,8 @@
         <div class="container py-4">
             <div class="row">
                 <div class="col-12">
-                    <div class="copyright text-center">
-                        <p>xxx桌遊股份有限公司</p>
+                    <div class="copyright text-center text-light">
+                        <p>XXX桌遊股份有限公司</p>
                         <p>地址 ： 雲林縣斗六市中山路104巷48號</p>
                         <p>服務時間：週一~六 13：00~:22：00</p>
                         <p>
@@ -498,21 +764,30 @@
     <script src="js/jquery.mycart-master/js/jquery.mycart.js"></script>
     <script>
         $(document).ready(function(){
-            $(".nav-login, .login-close").click(function () {
-                $(".login, .nav-top, .nav-bottom").toggle();
+            $(".nav-sm-login, .sm-login-close").click(function () {
+                $(".sm-login, .nav-sm-bottom, .nav-sm-top").toggle();
             });
 
             $(".menu-btn, .menu-close").click(function(){
-                $(".menu, .nav-top, .nav-bottom").toggle();
+                $(".menu, .nav-sm-bottom, .nav-sm-top").toggle();
+            });
+            
+            $(".nav-login, .login-bg").click(function(){
+                $(".login").slideToggle();
             })
            
-            $(".nav-login, .menu-btn").click(function(){
+            $(".search-btn, .search-close").click(function(){
+                $(".search, .nav-sm-bottom, .nav-sm-top").toggle();
+            });
+
+            $(".nav-sm-login, .menu-btn, .search-btn, .nav-login").click(function(){
                 $("body").addClass("scrollProhibit")
             })
-            $(".login-close, .menu-close").click(function(){
+            $(".sm-login-close, .menu-close, .search-close, .login-bg").click(function(){
                 $("body").removeClass("scrollProhibit")
             })
 
+            
             $(".register-btn").click(function(){
                 $(".register-content").show(); 
                 $(".register-btn").addClass("bottom-line");
@@ -527,6 +802,21 @@
                 $(".login-btn").addClass("bottom-line");
             });
 
+
+            $(".sm-register-btn").click(function(){
+                $(".sm-register-content").show(); 
+                $(".sm-register-btn").addClass("bottom-line");
+                $(".sm-login-content").hide(); 
+                $(".sm-login-btn").removeClass("bottom-line");
+            });
+
+            $(".sm-login-btn").click(function(){
+                $(".sm-register-content").hide(); 
+                $(".sm-register-btn").removeClass("bottom-line");
+                $(".sm-login-content").show(); 
+                $(".sm-login-btn").addClass("bottom-line");
+            });
+
             $(".eye-slash-icon").click(function(){
                 $(".password-input").attr("type","");
                 $(".eye-slash-icon").hide();
@@ -539,17 +829,19 @@
                 $(".eye-slash-icon").show()
             });
 
-
-
-        })
-    </script>
-    <script>
-        $(function () {
+            $("#searchTableGame").on("keyup",function(){
+                var value=$(this).val().toLowerCase();
+                $("#searchTable tr").filter(function(){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) >-1)
+                })
+            });
+        
+            $(function () {
 
                 var goToCartIcon = function ($addTocartBtn) {
                     var $cartIcon = $(".my-cart-icon");
                     var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
-                    
+
                 }
 
                 $('.my-cart-btn').myCart({
@@ -574,7 +866,11 @@
                 });
 
             });
+
+        })
+        
     </script>
+
 
 
   </body>
