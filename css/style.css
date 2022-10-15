@@ -154,7 +154,7 @@ body{
     visibility: visible;
     top: 85%;
 }
-.text h2, .productDescription h2, .productContent h2, .productNumberOfPeople h2{
+.text h2, .productDescription h2, .productContent h2, .productNumberOfPeople h2, .productRule h2{
     font-size: 25px;
     font-weight: 900;
 }
@@ -164,7 +164,7 @@ body{
 .price{
     font-size: 20px;
 }
-.productDescription p, .productContent p, .productNumberOfPeople p{
+.productDescription p, .productContent p, .productNumberOfPeople p, .productRule p{
     font-size: 15px;
     line-height: 2.5;
 }
@@ -267,6 +267,20 @@ body{
 .fotorama__nav-wrap{
     margin-top: 1.5rem;
 }
+.modal-content{
+    color: #fff;
+    background-color: #333;
+}
+#my-cart-table{
+    color: #fff;
+}
+.tableHover tr{
+    transition: 0.5s;
+}
+.tableHover tr:hover{
+    background-color: #fff;
+    color: #000;
+}
 @media screen and (min-width: 768px){
     .product-card .col-12:nth-child(even){
         margin-top: -100px;
@@ -295,6 +309,12 @@ body{
 @media screen and (min-width:1200px){
     .addShoppingCart-sm{
         display: none;
+    }
+    .fix-bottom-md{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
 }
 @media screen and (max-width: 767px){

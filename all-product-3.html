@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>xxx桌遊</title>
+    <link rel="icon" href="pic/LOGO-1.jpg">
     <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
@@ -16,86 +17,447 @@
 
   <body>
     
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Navbar</a>
-            <div class="shoppingCart-sm">
-                <span class="glyphicon glyphicon-shopping-cart my-cart-icon bi bi-cart">
-                    <span class="badge badge-notify my-cart-badge"></span>
-                </span>
+    <div class="sm-login">
+        <div class="sm-login-box ps-a">
+            <div class="sm-login-box-banner d-flex ps-r text-light">
+                <div class="sm-register-btn ms-auto">
+                    註冊
+                </div>
+                <div class="sm-login-btn me-auto bottom-line">
+                    登入
+                </div>
+                <div class="sm-login-close ps-a">
+                    <i class="bi bi-x-lg"></i>
+                </div>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+            <div class="sm-login-content container">
+
+                <div class="line"></div> 
+
+             
+                <form class="keyin mb-4 ps-r">
+
+                    <input type="email" class="form-control my-4" id="userEmail" required  placeholder="請輸入Email/手機號碼">
+
+                    <input type="password" class="form-control password-input" id="userPassword" required placeholder="請輸入密碼(6~20英數字)">
+
+                    <i class="bi bi-eye-slash eye-slash-icon ps-a"></i>
+                    <i class="bi bi-eye eye-icon ps-a"></i>
+
+                    <button type="submit" class="btn btn-secondary w-100 mt-4">登入</button>
+
+                </form>
+                    
+          
+                <div class=" mb-4 text-end">
+                    <a href="#" class="d-inline-block forgotPassword text-light">忘記密碼</a>
+                </div>
+                
+
+                <div class="useQuickLogin d-flex align-items-center mb-4">
+                    <div class="quickLoginLine"></div>
+                    <div class="text-light">使用以下方式快速登入</div>
+                    <div class="quickLoginLine"></div>
+                </div>
+
+                <button class="btn btn-primary w-100 mb-4">
+                    <i class="bi bi-facebook"></i>
+                    Facebook</button>
+                <button class="btn btn-success w-100">
+                    <i class="bi bi-line"></i>
+                    Line</button>
+
+
+            </div>
+
+            <div class="sm-register-content container">
+                <div class="line"></div>
+                <div class="phone my-4">
+                    <div class="text-light">TW +886</div>
+                    <input type="phone" class="form-control" id="userPhone" placeholder="0912 345 678">
+                </div>
+                <div class="continue mb-4">
+                    <button class="btn btn-secondary w-100">繼續</button>
+                </div>
+                <div class="useQuickLogin d-flex align-items-center mb-4">
+                    <div class="quickLoginLine"></div>
+                    <div class="text-light">使用以下方式快速註冊</div>
+                    <div class="quickLoginLine"></div>
+                </div>
+                <button class="btn btn-primary w-100 mb-4">
+                    <i class="bi bi-facebook"></i>
+                    Facebook</button>
+                <button class="btn btn-success w-100">
+                    <i class="bi bi-line"></i>
+                    Line</button>
+            </div>
+            
+        </div>
+ 
+    </div>
+
+
+    <div class="login">
+        <div class="login-box ps-a bg-333">
+            <div class="login-box-banner d-flex ps-r">
+                <div class="register-btn ms-auto text-light">
+                    註冊
+                </div>
+                <div class="login-btn me-auto bottom-line text-light">
+                    登入
+                </div>
+            </div>
+            <div class="login-content container">
+
+                <div class="line"></div> 
+
+             
+                <form class="keyin mb-4 ps-r">
+
+                    <input type="email" class="form-control my-4" id="userEmail" required  placeholder="請輸入Email/手機號碼">
+
+                    <input type="password" class="form-control password-input" id="userPassword" required placeholder="請輸入密碼(6~20英數字)">
+
+                    <i class="bi bi-eye-slash eye-slash-icon ps-a"></i>
+                    <i class="bi bi-eye eye-icon ps-a"></i>
+
+                    <button type="submit" class="btn btn-secondary w-100 mt-4">登入</button>
+
+                </form>
+                    
+          
+                <div class=" mb-4 text-end">
+                    <a href="#" class="d-inline-block forgotPassword text-light">忘記密碼</a>
+                </div>
+                
+
+                <div class="useQuickLogin d-flex align-items-center mb-4">
+                    <div class="quickLoginLine"></div>
+                    <div class=" text-light">使用以下方式快速登入</div>
+                    <div class="quickLoginLine"></div>
+                </div>
+
+                <button class="btn btn-primary w-100 mb-4">
+                    <i class="bi bi-facebook"></i>
+                    Facebook</button>
+                <button class="btn btn-success w-100">
+                    <i class="bi bi-line"></i>
+                    Line</button>
+
+
+            </div>       
+            <div class="register-content container">
+                <div class="line"></div>
+                <div class="phone">
+                    <div>TW +886</div>
+                    <input type="phone" class="form-control" id="userPhone" placeholder="0912 345 678">
+                </div>
+                <div class="continue">
+                    <button class="btn btn-secondary w-100">繼續</button>
+                </div>
+                <div class="useQuickLogin d-flex align-items-center mb-4">
+                    <div class="quickLoginLine"></div>
+                    <div class="">使用以下方式快速註冊</div>
+                    <div class="quickLoginLine"></div>
+                </div>
+                <button class="btn btn-primary w-100 mb-4">
+                    <i class="bi bi-facebook"></i>
+                    Facebook</button>
+                <button class="btn btn-success w-100">
+                    <i class="bi bi-line"></i>
+                    Line</button>
+            </div>
+        </div>
+        <div class="login-bg">
+
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menu-box ps-a">
+            <div class="container ps-r">
+
+                <div class="menu-title text-light">
+                    分類
+                </div>
+
+                <div class="menu-close ps-a text-light">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <div class="line">
+
+                </div>
+
+                <div class="menuBox">
+                    <div class="row justify-content-evenly mx-0">
+                        <a class="col-5 text-center text-light" href="about.html">
+                            <img src="pic/LOGO-2.jpg" alt="" class="w-100 menu-img">
+                            <h4 class="my-2">
+                                關於我們
+                            </h4>
+                            
+                        </a>
+                        <a class="col-5 text-center text-light" href="all-product-1.html">
+                            <img src="pic/all.jpg" alt="" class="w-100 menu-img">
+                            <h4 class="my-2">
+                                商品總覽
+                            </h4>
+                            
+                        </a>
+                        <a class="col-5 text-center text-light" href="product1-1.html">
+                            <img src="pic/party.jpg" alt="" class="w-100 menu-img">
+                            <h4 class="my-2">
+                                輕鬆派對
+                            </h4>
+                            
+                        </a>
+                        <a class="col-5 text-center text-light" href="product2-1.html">
+                            <img src="pic/compete.jpg" alt="" class="w-100 menu-img">
+                            <h4 class="my-2">
+                                策略陣營
+                            </h4>
+                            
+                        </a>
+                        <a class="col-5 text-center text-light" href="product3-1.html">
+                            <img src="pic/icebreaker.jpg" alt="" class="w-100 menu-img">
+                            <h4 class="my-2">
+                                破冰大師
+                            </h4>
+                            
+                        </a>
+                        <a class="col-5 text-center text-light" href="product4-1.html">
+                            <img src="pic/family.jpg" alt="" class="w-100 menu-img">
+                            <h4 class="my-2">
+                                闔家同樂
+                            </h4>
+                            
+                        </a>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <div class="search">
+        <div class="search-box ps-a">
+            <div class="container ps-r">
+                <div class="search-title text-light">
+                    搜尋
+                </div>
+                <div class="search-close ps-a text-light">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <div class="line"></div>
+                <form class="d-flex my-4" role="search">
+                    <input class="form-control" type="search" placeholder="找桌遊" aria-label="Search" id="searchTableGame">
+                </form>
+                <div class="searchTableBox">
+                    <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="col-4 text-light">分類</th>
+                        <th scope="col" class="col-4 text-light">名稱</th>
+                        <th scope="col" class="col-4"></th>
+                      </tr>
+                    </thead>
+                    <tbody class="align-middle" id="searchTable">
+                      <tr>
+                        <td class="text-light">策略陣營</td>
+                        <td class="text-light">抵抗組織 阿瓦隆</td>
+                        <td>
+                            <a href="awalong.html">
+                                <img src="pic/original_.jpg" alt="" class="w-100">
+                            </a>
+                            
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">策略陣營</td>
+                        <td class="text-light">風聲</td>
+                        <td>
+                            <a href="blackList.html">
+                                <img src="pic/e07194cf402928ab1732f0b4ee746f1b.jpg" alt="" class="w-100">
+                            </a>
+                            
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">輕鬆派對</td>
+                        <td class="text-light">出包魔法師</td>
+                        <td>
+                            <a href="abracaWhat.html">
+                                <img src="pic/Q021-3D.jpg" alt="" class="w-100">
+                            </a>
+                            
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">輕鬆派對</td>
+                        <td class="text-light">從前從前</td>
+                        <td>
+                            <a href="onceUponTime.html">
+                                <img src="pic/5ab909d6c6b5aa0d60111e79_Onc.jpg" alt="" class="w-100">
+                            </a>
+                            
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">破冰大師</td>
+                        <td class="text-light">試個好遊戲</td>
+                        <td>
+                            <a href="goodGame.html">
+                                <img src="pic/i010003_1622529460.jpg" alt="" class="w-100">
+                            </a>
+                            
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">策略陣營</td>
+                        <td class="text-light">間諜危機</td>
+                        <td>
+                            <img src="pic/pic2254217_lg.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">策略陣營</td>
+                        <td class="text-light">機密代號</td>
+                        <td>
+                            <img src="pic/Codenames_3D.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">策略陣營</td>
+                        <td class="text-light">血契獵殺</td>
+                        <td>
+                            <img src="pic/5ab8f1bce92abf9f316d91e6_Blood_Bound_Box_3D.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">輕鬆派對</td>
+                        <td class="text-light">傳情畫意</td>
+                        <td>
+                            <img src="pic/original_01.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">輕鬆派對</td>
+                        <td class="text-light">終極審判 電車難題</td>
+                        <td>
+                            <img src="pic/1598868475-3931480533-g_wn.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">輕鬆派對</td>
+                        <td class="text-light">黃牌</td>
+                        <td>
+                            <img src="pic/68ca464f539388840937ce4b92a9487d.jpg" alt="" class="w-100">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top nav-sm-top">
+        <div class="container-fluid">
+            <div class="navbar-brand mx-auto">
+                <img src="pic/LOGO-1.jpg" alt="" class="logo">
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top nav-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="pic/LOGO-1.jpg" alt="" class="logo">
+            </a>
+
+            <div class="collapse navbar-collapse navbar-sm" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">關於我們</a>
+                        <a class="nav-link text-light fs-20" href="about.html">關於我們</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle text-light fs-20" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             所有商品
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="all-product-1.html">商品總覽</a></li>
-                            <li><a class="dropdown-item" href="product1-1.html">輕鬆派對</a></li>
-                            <li><a class="dropdown-item" href="product2-1.html">策略陣營</a></li>
-                            <li><a class="dropdown-item" href="product3-1.html">破冰大師</a></li>
-                            <li><a class="dropdown-item" href="product4-1.html">闔家同樂</a></li>
+                        <ul class="dropdown-menu bg-333">
+                            <li><a class="dropdown-item text-light" href="all-product-1.html">商品總覽</a></li>
+                            <li><a class="dropdown-item text-light" href="product1-1.html">輕鬆派對</a></li>
+                            <li><a class="dropdown-item text-light" href="product2-1.html">策略陣營</a></li>
+                            <li><a class="dropdown-item text-light" href="product3-1.html">破冰大師</a></li>
+                            <li><a class="dropdown-item text-light" href="product4-1.html">闔家同樂</a></li>
                         </ul>
                     </li>
                     <li>
-                        <div class="nav-login nav-link">登入</div>
+                        <div class="nav-login nav-link text-light fs-20">登入</div>
                     </li>
-                    <li>
+                    <li class="shoppingCart-nav text-light">
                         <span class="glyphicon glyphicon-shopping-cart my-cart-icon nav-link bi bi-cart">
                             <span class="badge badge-notify my-cart-badge"></span>
                         </span>
                     </li>
 
-                    <div class="login">
-                        <div class="login-box ps-a">
-                            <div class="email my-2 p-2">
-                                <label for="userEmail" class="form-label">帳號</label>
-                                <input type="email" class="form-control" id="userEmail">
-                            </div>
-                            <div class="password my-2 p-2">
-                                <label for="userPassword" class="form-label">密碼</label>
-                                <input type="password" class="form-control" id="userPassword">
-                            </div>
-                            <div class="d-flex justify-content-around">
-                                <a href="#" class="d-inline-block register p-2 my-2">註冊</a>
-                                <button type="submit" class="btn btn-secondary btn-login my-2 p-2">登入</button>
-                                <a href="#" class="d-inline-block forgotPassword p-2 my-2">忘記密碼</a>
-                            </div>
-                        </div>
-                        <div class="login-bg"></div>
-                    </div>
-
-<!-- 
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered ">
-                            <div class="modal-content p-2">
-                                <div class="email my-2">
-                                    <label for="userEmail" class="form-label">帳號</label>
-                                    <input type="email" class="form-control" id="userEmail">
-                                </div>
-                                <div class="password my-2">
-                                    <label for="userPassword" class="form-label">密碼</label>
-                                    <input type="password" class="form-control" id="userPassword">
-                                </div>
-                                <button type="submit" class="btn btn-secondary my-2 d-flex mx-auto">登入</button>
-                            </div>
-                        </div>
-                    </div> -->
+                    
                 </ul>
                 
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="找桌遊" aria-label="Search">
                 </form>
             </div>
+            
+        </div>
+    </nav>
+
+
+    <nav class="bg-dark navbar-dark fixed-bottom nav-sm-bottom">
+        <div class="container-fluid">
+            <div class="row row-cols-5">
+                <a class="col text-light nav-sm-item text-center" href="index.html">
+                    <i class="bi bi-house-door-fill"></i>
+
+                    <div class="home text-light d-block">首頁</div>
+
+                    
+
+                </a>
+                <div class="col text-light nav-sm-item text-center nav-sm-login">
+                    <i class="bi bi-person-circle"></i>
+                    <p class="nav-link">個人</p>
+
+                    
+                </div>
+                <div class="col text-light nav-sm-item text-center menu-btn">
+                    <i class="bi bi-justify"></i>
+                    <p>分類</p>
+
+                </div>
+
+                <div class="col search-btn text-light nav-sm-item text-center">
+                    <i class="bi bi-search"></i>
+                    <p>搜尋</p>
+                </div>
+
+                <div class="col text-light nav-sm-item text-center">
+                    <span class="glyphicon glyphicon-shopping-cart my-cart-icon bi bi-cart">
+                        <span class="badge badge-notify my-cart-badge"></span>
+                    </span>
+                    <p>購物車</p>
+
+                </div>
+            </div>
+
         </div>
     </nav>
 
@@ -104,7 +466,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
-                <li class="breadcrumb-item active" aria-current="page">商品總覽</li>
+                <li class="breadcrumb-item active text-light" aria-current="page">商品總覽</li>
             </ol>
         </nav>
         <div class="dropdown project">
@@ -127,8 +489,8 @@
         <div class="row">
             <div class="col-md-3 aside">
                 <div class="list-group my-2">
-                    <a href="all-product-1.html" class="list-group-item list-group-item-action active" aria-current="true">
-                      商品總覽
+                    <a href="all-product-1.html" class="list-group-item list-group-item-action active bg-secondary" aria-current="true">
+                        商品總覽
                     </a>
                     <a href="product1-1.html" class="list-group-item list-group-item-action">輕鬆派對</a>
                     <a href="product2-1.html" class="list-group-item list-group-item-action">策略陣營</a>
@@ -137,101 +499,83 @@
                   </div>
             </div>
             <div class="col-12 col-md-9">
-                <div class="row row-cols-1 row-cols-xl-2">
+                <div class="row row-cols-2 row-cols-xl-4 product-box">
+
+
                     <div class="col my-2">
                         <div class="card">
-                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div style="background-image: url(pic/5ab909d6c6b5aa0d60111e79_Onc.jpg);" class="card-pic ps-r">
+                                <div class="ps-a addShoppingCart my-cart-btn" data-id="3" data-name="從前從前" data-summary="summary 1" data-price="890" data-quantity="1" data-image="pic/5ab909d6c6b5aa0d60111e79_Onc.jpg" data-source="onceUponTime.html">
+                                    <h4>加入購物車</h4>
+                                </div>
+                                <a href="onceUponTime.html" class="card-bg"></a>
+                            </div>
+                    
+                            <div class="card-body bg-secondary text-light">
+                                <p class="card-text">從前從前</p>
+                                <p class="card-text">NT $ 890</p>
                             </div>
                         </div>
+                        <button class="btn btn-secondary addShoppingCart-sm w-100 my-cart-btn" data-id="3" data-name="從前從前" data-summary="summary 1" data-price="890" data-quantity="1" data-image="pic/5ab909d6c6b5aa0d60111e79_Onc.jpg" data-source="onceUponTime.html">
+                                加入購物車
+                        </button>
                     </div>
+
+
                     <div class="col my-2">
                         <div class="card">
-                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div style="background-image: url(pic/e07194cf402928ab1732f0b4ee746f1b.jpg);" class="card-pic ps-r">
+                                <div class="ps-a addShoppingCart my-cart-btn" data-id="4" data-name="風聲 黑名單" data-summary="summary 1" data-price="550" data-quantity="1" data-image="pic/e07194cf402928ab1732f0b4ee746f1b.jpg" data-source="blackList.html">
+                                    <h4>加入購物車</h4>
+                                </div>
+                                <a href="blackList.html" class="card-bg"></a>
+                            </div>
+                    
+                            <div class="card-body bg-secondary text-light">
+                                <p class="card-text">風聲 黑名單</p>
+                                <p class="card-text">NT $ 550</p>
                             </div>
                         </div>
-                        
+                        <button class="btn btn-secondary addShoppingCart-sm w-100 my-cart-btn" data-id="4" data-name="風聲 黑名單" data-summary="summary 1" data-price="550" data-quantity="1" data-image="pic/e07194cf402928ab1732f0b4ee746f1b.jpg" data-source="blackList.html">
+                                加入購物車
+                        </button>
                     </div>
+
+
                     <div class="col my-2">
                         <div class="card">
-                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div style="background-image: url(pic/i010003_1622529460.jpg);" class="card-pic ps-r">
+                                <div class="ps-a addShoppingCart my-cart-btn" data-id="5" data-name="試個好遊戲" data-summary="summary 1" data-price="390" data-quantity="1" data-image="pic/i010003_1622529460.jpg" data-source="goodGame.html">
+                                    <h4>加入購物車</h4>
+                                </div>
+                                <a href="goodGame.html" class="card-bg"></a>
+                            </div>
+                    
+                            <div class="card-body bg-secondary text-light">
+                                <p class="card-text">試個好遊戲</p>
+                                <p class="card-text">NT $ 390</p>
                             </div>
                         </div>
+                        <button class="btn btn-secondary addShoppingCart-sm w-100 my-cart-btn" data-id="5" data-name="試個好遊戲" data-summary="summary 1" data-price="390" data-quantity="1" data-image="pic/i010003_1622529460.jpg" data-source="goodGame.html">
+                                加入購物車
+                        </button>
                     </div>
-                    <div class="col my-2">
-                        <div class="card">
-                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col my-2 invisible">
-                        <div class="card">
-                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col my-2 invisible">
-                        <div class="card">
-                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col my-2 invisible">
-                        <div class="card">
-                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col my-2 invisible">
-                        <div class="card">
-                            <img src="http://http://fakeimg.pl/300x250.pl/300x250" alt="" class="card-img-top w-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
+
+
+ 
+
+
+                   
+
+
+                 
+                    
+                    
                 </div>
 
 
                 <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center xl-2">
+                    <ul class="pagination justify-content-center xl-2 mt-2">
                         <li class="page-item">
                             <a class="page-link" href="all-product-2.html" aria-label="Previous">
                                 <span aria-hidden="true">&laquo;</span>
@@ -239,7 +583,7 @@
                         </li>
                         <li class="page-item"><a class="page-link" href="all-product-1.html">1</a></li>
                         <li class="page-item"><a class="page-link" href="all-product-2.html">2</a></li>
-                        <li class="page-item"><a class="page-link active" href="all-product-3.html">3</a></li>
+                        <li class="page-item"><a class="page-link bg-secondary text-light disabled" href="#">3</a></li>
                         <li class="page-item">
                             <a class="page-link disabled" href="#" aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
@@ -252,93 +596,12 @@
     </div>
 
 
-    <div class="footer">
+    <div class="footer fix-bottom-space fix-bottom-md">
         <div class="container py-4">
             <div class="row">
-                <!-- <div class="col-3 footer-link-md d-none">
-                    <div class="list-group">
-                        <div class="list-group-item footer-link-title">A disabled link item</div>
-                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                    </div>
-                </div>
-                <div class="col-3 footer-link-md d-none">
-                    <div class="list-group">
-                        <div class="list-group-item footer-link-title">A disabled link item</div>
-                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                    </div>
-                </div>
-                <div class="col-3 footer-link-md d-none">
-                    <div class="list-group">
-                        <div class="list-group-item footer-link-title">A disabled link item</div>
-                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                    </div>
-                </div>
-                <div class="col-12 footer-link">
-                    <nav class="navbar navbar-dark bg-dark">
-                        <div class="container-fluid">
-                          <div class="navbar-brand">Navbar</div>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-link-btn-1" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="footer-link-btn-1">
-                            <ul class="list-group">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
-                          </div>
-                        </div>
-                      </nav>
-                </div>
-                <div class="col-12 footer-link">
-                    <nav class="navbar navbar-dark bg-dark">
-                        <div class="container-fluid">
-                          <div class="navbar-brand">Navbar</div>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-link-btn-2" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="footer-link-btn-2">
-                            <ul class="list-group">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
-                          </div>
-                        </div>
-                      </nav>
-                </div>
-                <div class="col-12 footer-link">
-                    <nav class="navbar navbar-dark bg-dark">
-                        <div class="container-fluid">
-                          <div class="navbar-brand">Navbar</div>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-link-btn-3" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="footer-link-btn-3">
-                            <ul class="list-group">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
-                          </div>
-                        </div>
-                      </nav>
-                </div> -->
                 <div class="col-12">
-                    <div class="copyright text-center mt-4">
-                        <p>xxx桌遊股份有限公司</p>
+                    <div class="copyright text-center text-light">
+                        <p>XXX桌遊股份有限公司</p>
                         <p>地址 ： 雲林縣斗六市中山路104巷48號</p>
                         <p>服務時間：週一~六 13：00~:22：00</p>
                         <p>
@@ -361,24 +624,84 @@
     <script src="js/jquery.mycart-master/js/jquery.mycart.js"></script>
     <script>
         $(document).ready(function(){
-            $(".nav-login, .btn-login, .login-bg").click(function () {
-                $(".login").slideToggle();
+            $(".nav-sm-login, .sm-login-close").click(function () {
+                $(".sm-login, .nav-sm-bottom, .nav-sm-top").toggle();
             });
-            $(".nav-login").click(function(){
+
+            $(".menu-btn, .menu-close").click(function(){
+                $(".menu, .nav-sm-bottom, .nav-sm-top").toggle();
+            });
+            
+            $(".nav-login, .login-bg").click(function(){
+                $(".login").slideToggle();
+            })
+           
+            $(".search-btn, .search-close").click(function(){
+                $(".search, .nav-sm-bottom, .nav-sm-top").toggle();
+            });
+
+            $(".nav-sm-login, .menu-btn, .search-btn, .nav-login").click(function(){
                 $("body").addClass("scrollProhibit")
             })
-            $(".login-bg").click(function(){
+            $(".sm-login-close, .menu-close, .search-close, .login-bg").click(function(){
                 $("body").removeClass("scrollProhibit")
             })
-        })
-    </script>
-    <script>
-        $(function () {
+
+            
+            $(".register-btn").click(function(){
+                $(".register-content").show(); 
+                $(".register-btn").addClass("bottom-line");
+                $(".login-content").hide(); 
+                $(".login-btn").removeClass("bottom-line");
+            });
+
+            $(".login-btn").click(function(){
+                $(".register-content").hide(); 
+                $(".register-btn").removeClass("bottom-line");
+                $(".login-content").show(); 
+                $(".login-btn").addClass("bottom-line");
+            });
+
+
+            $(".sm-register-btn").click(function(){
+                $(".sm-register-content").show(); 
+                $(".sm-register-btn").addClass("bottom-line");
+                $(".sm-login-content").hide(); 
+                $(".sm-login-btn").removeClass("bottom-line");
+            });
+
+            $(".sm-login-btn").click(function(){
+                $(".sm-register-content").hide(); 
+                $(".sm-register-btn").removeClass("bottom-line");
+                $(".sm-login-content").show(); 
+                $(".sm-login-btn").addClass("bottom-line");
+            });
+
+            $(".eye-slash-icon").click(function(){
+                $(".password-input").attr("type","");
+                $(".eye-slash-icon").hide();
+                $(".eye-icon").show()
+            });
+
+            $(".eye-icon").click(function(){
+                $(".password-input").attr("type","password");
+                $(".eye-icon").hide();
+                $(".eye-slash-icon").show()
+            });
+
+            $("#searchTableGame").on("keyup",function(){
+                var value=$(this).val().toLowerCase();
+                $("#searchTable tr").filter(function(){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) >-1)
+                })
+            });
+        
+            $(function () {
 
                 var goToCartIcon = function ($addTocartBtn) {
                     var $cartIcon = $(".my-cart-icon");
                     var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
-                    
+
                 }
 
                 $('.my-cart-btn').myCart({
@@ -403,6 +726,9 @@
                 });
 
             });
+
+        })
+        
     </script>
 
 

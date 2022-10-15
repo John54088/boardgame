@@ -86,7 +86,7 @@
     var setAllProducts = function (products) {
       localStorage[STORAGE_NAME] = JSON.stringify(products);
     };
-    var addProduct = function (id, name, summary, price, quantity, image) {
+    var addProduct = function (id, name, summary, price, quantity, image, source) {
       var products = getAllProducts();
       products.push({
         id: id,
@@ -94,7 +94,8 @@
         summary: summary,
         price: price,
         quantity: quantity,
-        image: image
+        image: image,
+        source: source
       });
       setAllProducts(products);
     };
@@ -124,7 +125,7 @@
       setAllProducts(products);
       return true;
     };
-    var setProduct = function (id, name, summary, price, quantity, image) {
+    var setProduct = function (id, name, summary, price, quantity, image, source) {
       if (typeof id === "undefined") {
         console.error("id required");
         return false;
@@ -148,7 +149,7 @@
       summary = typeof summary === "undefined" ? "" : summary;
 
       if (!updatePoduct(id, quantity, true)) {
-        addProduct(id, name, summary, price, quantity, image);
+        addProduct(id, name, summary, price, quantity, image, source);
       }
     };
     var clearProduct = function () {
@@ -211,7 +212,7 @@
     if (options.cartItems && options.cartItems.constructor === Array) {
       ProductManager.clearProduct();
       $.each(options.cartItems, function () {
-        ProductManager.setProduct(this.id, this.name, this.summary, this.price, this.quantity, this.image);
+        ProductManager.setProduct(this.id, this.name, this.summary, this.price, this.quantity, this.image, this.source);
       });
     }
 
@@ -226,10 +227,10 @@
         '<h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-shopping-cart"></span>購物車</h4>' +
         '</div>' +
         '<div class="modal-body">' +
-        '<table class="table table-hover table-responsive align-middle" id="' + idCartTable + '"></table>' +
+        '<table class="table tableHover table-responsive align-middle" id="' + idCartTable + '"></table>' +
         '</div>' +
         '<div class="modal-footer">' +
-        '<button type="button" class="btn btn-primary ' + classCheckoutCart + '">結帳</button>' +
+        '<button type="button" class="btn btn-danger ' + classCheckoutCart + '">結帳</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -246,7 +247,7 @@
         var total = this.quantity * this.price;
         $cartTable.append(
           '<tr title="' + this.summary + '" data-id="' + this.id + '" data-price="' + this.price + '">' +
-          '<td class="text-center" style="width: 30px;"><img width="60px" height="60px" src="' + this.image + '"/></td>' +
+          '<td class="text-center" style="width: 30px;"><a href="' + this.source + '" ><img width="60px" height="60px" src="' + this.image + '"/></a></td>' +
           '<td>' + this.name + '</td>' +
           '<td title="Unit Price" class="text-right">' + options.currencySymbol + MathHelper.getRoundedNumber(this.price) + '</td>' +
           '<tr title="' + this.summary + '" data-id="' + this.id + '" data-price="' + this.price + '">' +
@@ -367,8 +368,9 @@
       var price = $target.data('price');
       var quantity = $target.data('quantity');
       var image = $target.data('image');
+      var source = $target.data('source');
 
-      ProductManager.setProduct(id, name, summary, price, quantity, image);
+      ProductManager.setProduct(id, name, summary, price, quantity, image, source);
       $cartBadge.text(ProductManager.getTotalQuantity());
 
       options.afterAddOnCart(ProductManager.getAllProducts(), ProductManager.getTotalPrice(), ProductManager.getTotalQuantity());
