@@ -309,6 +309,15 @@ body{
 .accordion-item{
     border: none;
 }
+.menuBox img, .modal-content, #searchTable img{
+    border-radius: 20px;
+}
+#my-cart-table img{
+    border-radius: 10px;
+}
+.pagination{
+    margin-bottom: 4rem;
+}
 @media screen and (min-width: 768px){
     .product-card .col-12:nth-child(even){
         margin-top: -100px;
@@ -344,6 +353,12 @@ body{
         bottom: 0;
         left: 0;
     }
+    .fix-bottom{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
 }
 @media screen and (max-width: 767px){
     .aside{
@@ -364,10 +379,10 @@ body{
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
-    .badge{
-        padding: 0;
-        font-size: 12px !important;
+    .fotorama__nav-wrap{
+        margin-bottom: 1.5rem;
     }
+    
     
 
     
@@ -382,6 +397,10 @@ body{
     .nav-top{
         display: none;
     }
+    .badge{
+        padding: 0;
+        font-size: 12px !important;
+    }
 }
 @media screen and (max-width: 1199px){
     .addShoppingCart{
@@ -394,7 +413,7 @@ body{
         border-bottom-left-radius: 0;
         border: none;
     }
-    .my-cart-btn{
+    .product-btn{
         border-top-right-radius: 0;
         border-top-left-radius: 0;
         border-bottom-right-radius: 20px;
