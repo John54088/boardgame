@@ -96,8 +96,15 @@ $(document).ready(function(){
                 $.each(products, function () {
                     total += this.quantity * this.price;
                 });
+                return total * 0.05;
+            },
+            getFinalPrice: function (products) {
+                var total = 0;
+                $.each(products, function () {
+                    total += this.quantity * this.price;
+                });
                 return total * 0.95;
-            }
+            },
         });
 
     });

@@ -31,6 +31,9 @@
       },
       getDiscountPrice: function (products, totalPrice, totalQuantity) {
         return null;
+      },
+      getFinalPrice: function (products, totalPrice, totalQuantity) {
+        return null;
       }
     };
 
@@ -205,6 +208,7 @@
     var idGrandTotal = 'my-cart-grand-total';
     var idEmptyCartMessage = 'my-cart-empty-message';
     var idDiscountPrice = 'my-cart-discount-price';
+    var idFinalPrice = 'my-cart-final-price';
     var classProductTotal = 'my-product-total';
     var classAffixMyCartIcon = 'my-cart-icon-affix';
 
@@ -261,7 +265,7 @@
       $cartTable.append(products.length ?
         '<tr>' +
         '<td></td>' +
-        '<td><strong>小計</strong></td>' +
+        '<td><strong>總共</strong></td>' +
         '<td class="text-right"><strong id="' + idGrandTotal + '"></strong></td>' +
         '</tr>' :
         '<div class="alert alert-danger" role="alert" id="' + idEmptyCartMessage + '">未選購任何商品</div>'
@@ -272,14 +276,26 @@
         $cartTable.append(
           '<tr style="color: red">' +
           '<td></td>' +
-          '<td><strong>折扣完</strong></td>' +
-          '<td class="text-right"><strong id="' + idDiscountPrice + '"></strong></td>' +
+          '<td><strong>折扣</strong></td>' +
+          '<td class="text-right line-through"><strong id="' + idDiscountPrice + '"></strong></td>' +
           '</tr>'
         );
-      }
+      };
+
+      var finalPrice = options.getFinalPrice(products, ProductManager.getTotalPrice(), ProductManager.getTotalQuantity());
+      if (products.length && finalPrice !== null) {
+        $cartTable.append(
+          '<tr>' +
+          '<td></td>' +
+          '<td><strong>小計</strong></td>' +
+          '<td class="text-right"><strong id="' + idFinalPrice + '"></strong></td>' +
+          '</tr>'
+        );
+      };
 
       showGrandTotal();
       showDiscountPrice();
+      showFinalPrice();
     };
     var showModal = function () {
       drawTable();
@@ -296,6 +312,9 @@
     };
     var showDiscountPrice = function () {
       $("#" + idDiscountPrice).text(options.currencySymbol + MathHelper.getRoundedNumber(options.getDiscountPrice(ProductManager.getAllProducts(), ProductManager.getTotalPrice(), ProductManager.getTotalQuantity())));
+    };
+    var showFinalPrice = function () {
+      $("#" + idFinalPrice).text(options.currencySymbol + MathHelper.getRoundedNumber(options.getFinalPrice(ProductManager.getAllProducts(), ProductManager.getTotalPrice(), ProductManager.getTotalQuantity())));
     };
 
     /*
@@ -324,6 +343,7 @@
       $cartBadge.text(ProductManager.getTotalQuantity());
       showGrandTotal();
       showDiscountPrice();
+      showFinalPrice();
     });
 
     $(document).on('keypress', "." + classProductQuantity, function (evt) {

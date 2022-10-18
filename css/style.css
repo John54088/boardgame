@@ -318,6 +318,13 @@ body{
 .pagination{
     margin-bottom: 4rem;
 }
+.product-btn:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.line-through{
+    text-decoration: line-through;
+}
 @media screen and (min-width: 768px){
     .product-card .col-12:nth-child(even){
         margin-top: -100px;
