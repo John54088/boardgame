@@ -1,10 +1,10 @@
 $(document).ready(function(){
     $(".nav-sm-login, .sm-login-close").click(function () {
-        $(".sm-login, .nav-sm-bottom, .nav-sm-top").toggle();
+        $(".sm-login, .nav-sm-bottom, .nav-sm-top").slideToggle();
     });
 
     $(".menu-btn, .menu-close").click(function(){
-        $(".menu, .nav-sm-bottom, .nav-sm-top").toggle();
+        $(".menu, .nav-sm-bottom, .nav-sm-top").slideToggle();
     });
     
     $(".nav-login, .login-bg").click(function(){
@@ -12,7 +12,7 @@ $(document).ready(function(){
     })
    
     $(".search-btn, .search-close").click(function(){
-        $(".search, .nav-sm-bottom, .nav-sm-top").toggle();
+        $(".search, .nav-sm-bottom, .nav-sm-top").slideToggle();
     });
 
     $(".nav-sm-login, .menu-btn, .search-btn, .nav-login").click(function(){
