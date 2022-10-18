@@ -283,9 +283,22 @@ body{
 }
 #my-cart-table{
     color: #fff;
+    margin: 0;
+}
+.table{
+    border: none;
+}
+tbody, td, tfoot, th, thead, tr{
+    border-style: none;
 }
 .tableHover tr{
     transition: 0.5s;
+}
+tbody tr:nth-last-child(even){
+    border-bottom: #999 solid 1px;
+}
+tbody tr:nth-last-child(2){
+    border: none;
 }
 .tableHover tr:hover{
     background-color: #fff;

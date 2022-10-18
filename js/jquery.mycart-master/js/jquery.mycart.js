@@ -268,7 +268,7 @@
         '<td><strong>總共</strong></td>' +
         '<td class="text-right"><strong id="' + idGrandTotal + '"></strong></td>' +
         '</tr>' :
-        '<div class="alert alert-danger" role="alert" id="' + idEmptyCartMessage + '">未選購任何商品</div>'
+        '<div class="alert alert-danger my-4" role="alert" id="' + idEmptyCartMessage + '">未選購任何商品</div>'
       );
 
       var discountPrice = options.getDiscountPrice(products, ProductManager.getTotalPrice(), ProductManager.getTotalQuantity());
