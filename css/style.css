@@ -27,7 +27,7 @@ body{
     background-color: #000;
     color: #fff;
 }
-.promotion-title, .product-card-title{
+.promotion-title, .product-card-title, .service-title, .supply{
     margin-top: 50px;
     padding: 15px 0;
     background-color: #333;
@@ -35,40 +35,38 @@ body{
     color: #fff;
 }
 .fix-space{
-    margin-top: 66px;
+    margin-top: 68px;
 }
 .logo{
-    width: 40px;
+    width: 200px;
 }
 .nav-login{
     cursor: pointer;
 }
-.sm-login, .menu, .search{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: none;
-    z-index: 8;
+.navbar-nav li, .register-btn, .login-btn{
+    cursor: pointer;
 }
-.login{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.sm-login-box{
     width: 100%;
-    display: none;
-    z-index: 8;
-}
-.sm-login-box, .menu-box, .search-box{
-    width: 100%;
-    height: 100vh;
+    height: 57vh;
     background-color: #333;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.search-box, .menu-box{
+    width: 100%;
+    height: 90vh;
+    background-color: #333;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    transition: 0.5s;
+    border-radius: 20px;
 }
 .login-box{
     width: 40%;
@@ -78,13 +76,11 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
-}
-.menu-box{
-    overflow: scroll;
+    transition: 0.5s;
 }
 .searchTableBox:nth-last-child(1){
     width: 100%;
-    height: calc(100vh - 133px - 4.5rem);
+    height: calc(90vh - 133px - 4.5rem);
     overflow: scroll;
 }
 .scrollProhibit{
@@ -246,15 +242,14 @@ body{
 }
 .menuBox{
     width: 100%;
-    height: calc(100vh - 55px - 3rem);
+    height: calc(90vh - 55px - 3rem);
     overflow: scroll;
     margin-top: 1.5rem;
-
 }
-.login .phone{
+.login .phone, .sm-login .phone{
     margin: calc(37px + 1rem) 0;
 }
-.login .continue{
+.login .continue, .sm-login .continue{
     margin-bottom: calc(37px + 1rem);
 }
 .promotionContent p{
@@ -304,8 +299,32 @@ tbody, td, tfoot, th, thead, tr{
     background-color: #fff;
     color: #000;
 }
-.promotion-img, .product-card-img{
+.promotion-img, .product-card-img, .service-content-img{
     border-radius: 20px;
+}
+.service-content h2, .about-content h2{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.service-content p,  .about-content p{
+    line-height: 2;
+    color: rgb(200, 200, 200);
+}
+.about-content-img{
+    width: 60px;
+    float: left;
+    margin-right: 12px;
+}
+.service-right-img{
+    width: 60%;
+}
+.more-btn{
+    width: 150px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 50px;
 }
 .accordion-item:first-of-type{
     border-top-left-radius: 20px;
@@ -320,9 +339,20 @@ tbody, td, tfoot, th, thead, tr{
 }
 .btn-fb{
     background-color: #3b5998;
+    transition: 0.5s;
+}
+.btn-fb:hover{
+    background-color: #293c67 !important;
 }
 .btn-line{
     background-color: #00c300;
+    transition: 0.5s;
+}
+.btn-line:hover{
+    background-color: #007600 !important;
+}
+.text-width{
+    width: calc(1.375rem + 1.5vw);
 }
 .badge{
     padding: 0px;
@@ -343,6 +373,15 @@ tbody, td, tfoot, th, thead, tr{
     background-color: #fff !important;
     color: #000 !important;
 }
+.more-btn:hover{
+    background: #fff !important;
+}
+.more-btn:hover a{
+    color: #000 !important;
+}
+.more-btn a{
+    transition: 0.5s;
+}
 .line-through{
     text-decoration: line-through;
 }
@@ -356,6 +395,13 @@ tbody, td, tfoot, th, thead, tr{
 }
 #headingTwo, #headingThree{
     border-top: 1px solid #000;
+}
+.dropdown-menu a{
+    color: #fff;
+}
+.dropdown-menu li:hover .dropdown-menu a{
+    background-color: #fff;
+    color: #000;
 }
 @media screen and (min-width: 768px){
     .product-card .col-12:nth-child(even){
@@ -372,6 +418,10 @@ tbody, td, tfoot, th, thead, tr{
     }
     .project{
         display: none;
+    }
+    .accordion{
+        box-shadow: #000 0px 0px 20px;
+        border-radius: 20px;
     }
 }
 @media screen and (min-width:992px){
@@ -420,6 +470,15 @@ tbody, td, tfoot, th, thead, tr{
     }
     .fotorama__nav-wrap{
         margin-bottom: 1.5rem;
+    }
+    .shop{
+        margin-top: 1.5rem;
+    }
+    .about-content-card:nth-child(6), .about-content-card:nth-child(8){
+        margin-top: 1.5rem;
+    }
+    .about-content-space{
+        display: none;
     }
     
     

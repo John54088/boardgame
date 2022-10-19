@@ -1,26 +1,26 @@
 $(document).ready(function(){
-    $(".nav-sm-login, .sm-login-close").click(function () {
-        $(".sm-login, .nav-sm-bottom, .nav-sm-top").slideToggle();
-    });
+    // $(".nav-sm-login, .sm-login-close").click(function () {
+    //     $(".sm-login, .nav-sm-bottom, .nav-sm-top").slideToggle();
+    // });
 
-    $(".menu-btn, .menu-close").click(function(){
-        $(".menu, .nav-sm-bottom, .nav-sm-top").slideToggle();
-    });
-    
-    $(".nav-login, .login-bg").click(function(){
-        $(".login").slideToggle();
-    })
+    // $(".menu-btn, .menu-close").click(function(){
+    //     $(".menu, .nav-sm-bottom, .nav-sm-top").slideToggle();
+    // });
+
+    // $(".nav-login").click(function(){
+    //     $(".nav-top").addClass("")
+    // })
    
-    $(".search-btn, .search-close").click(function(){
-        $(".search, .nav-sm-bottom, .nav-sm-top").slideToggle();
-    });
+    // $(".search-btn, .search-close").click(function(){
+    //     $(".search, .nav-sm-bottom, .nav-sm-top").slideToggle();
+    // });
 
-    $(".nav-sm-login, .menu-btn, .search-btn, .nav-login").click(function(){
-        $("body").addClass("scrollProhibit")
-    })
-    $(".sm-login-close, .menu-close, .search-close, .login-bg").click(function(){
-        $("body").removeClass("scrollProhibit")
-    })
+    // $(".nav-sm-login, .menu-btn, .search-btn").click(function(){
+    //     $("body").addClass("scrollProhibit")
+    // })
+    // $(".sm-login-close, .menu-close, .search-close").click(function(){
+    //     $("body").removeClass("scrollProhibit")
+    // })
 
     
     $(".register-btn").click(function(){

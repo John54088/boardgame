@@ -7,6 +7,7 @@
     <link rel="icon" href="pic/LOGO-1.jpg">
     <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="js/WOW-master/css/libs/animate.css">
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -17,7 +18,7 @@
   <body>
 
     <nav class="nav-all">
-        <div class="sm-login">
+        <!-- <div class="sm-login">
             <div class="sm-login-box ps-a">
                 <div class="sm-login-box-banner d-flex ps-r text-light">
                     <div class="sm-register-btn ms-auto">
@@ -25,9 +26,6 @@
                     </div>
                     <div class="sm-login-btn me-auto bottom-line">
                         登入
-                    </div>
-                    <div class="sm-login-close ps-a">
-                        <i class="bi bi-x-lg"></i>
                     </div>
                 </div>
     
@@ -96,10 +94,174 @@
                 
             </div>
      
+        </div> -->
+
+
+
+        
+        
+        <div class="modal fade sm-login" id="sm-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="sm-login-box ps-a">
+                    <div class="sm-login-box-banner d-flex ps-r text-light">
+                        <div class="sm-register-btn ms-auto">
+                            註冊
+                        </div>
+                        <div class="sm-login-btn me-auto bottom-line">
+                            登入
+                        </div>
+                    </div>
+            
+            
+                    <div class="sm-login-content container">
+            
+                        <div class="line"></div>
+            
+            
+                        <form class="keyin mb-4 ps-r">
+            
+                            <input type="email" class="form-control my-4" id="userEmail" required placeholder="請輸入Email/手機號碼">
+            
+                            <input type="password" class="form-control password-input" id="userPassword" required
+                                placeholder="請輸入密碼(6~20英數字)">
+            
+                            <i class="bi bi-eye-slash eye-slash-icon ps-a"></i>
+                            <i class="bi bi-eye eye-icon ps-a"></i>
+            
+                            <button type="submit" class="btn btn-secondary w-100 mt-4">登入</button>
+            
+                        </form>
+            
+            
+                        <div class=" mb-4 text-end">
+                            <a href="#" class="d-inline-block forgotPassword text-light">忘記密碼</a>
+                        </div>
+            
+            
+                        <div class="useQuickLogin d-flex align-items-center mb-4">
+                            <div class="quickLoginLine"></div>
+                            <div class="text-light">使用以下方式快速登入</div>
+                            <div class="quickLoginLine"></div>
+                        </div>
+            
+                        <button class="btn btn-fb w-100 text-light mb-4">
+                            <i class="bi bi-facebook"></i>
+                            &emsp;Facebook</button>
+                        <button class="btn btn-line text-light w-100">
+                            <i class="bi bi-line"></i>
+                            &emsp;Line</button>
+            
+            
+                    </div>
+            
+                    <div class="sm-register-content container">
+                        <div class="line"></div>
+                        <div class="phone">
+                            <div class="text-light">TW +886</div>
+                            <input type="phone" class="form-control" id="userPhone" required placeholder="0912 345 678">
+                        </div>
+                        <div class="continue">
+                            <button class="btn btn-secondary w-100">繼續</button>
+                        </div>
+                        <div class="useQuickLogin d-flex align-items-center mb-4">
+                            <div class="quickLoginLine"></div>
+                            <div class="text-light">使用以下方式快速註冊</div>
+                            <div class="quickLoginLine"></div>
+                        </div>
+                        <button class="btn btn-fb w-100 text-light mb-4">
+                            <i class="bi bi-facebook"></i>
+                            &emsp;Facebook</button>
+                        <button class="btn btn-line text-light w-100">
+                            <i class="bi bi-line"></i>
+                            &emsp;Line</button>
+                    </div>
+            
+                </div>
+            
+            
+            </div>
+        </div>
+          
+
+        <div class="modal fade login" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="login-box ps-a bg-333">
+                        <div class="login-box-banner d-flex ps-r">
+                            <div class="register-btn ms-auto text-light">
+                                註冊
+                            </div>
+                            <div class="login-btn me-auto bottom-line text-light">
+                                登入
+                            </div>
+                        </div>
+                        <div class="login-content container">
+            
+                            <div class="line"></div> 
+            
+                         
+                            <form class="keyin mb-4 ps-r">
+            
+                                <input type="email" class="form-control my-4" id="userEmail" required  placeholder="請輸入Email/手機號碼">
+            
+                                <input type="password" class="form-control password-input" id="userPassword" required placeholder="請輸入密碼(6~20英數字)">
+            
+                                <i class="bi bi-eye-slash eye-slash-icon ps-a"></i>
+                                <i class="bi bi-eye eye-icon ps-a"></i>
+            
+                                <button type="submit" class="btn btn-secondary w-100 mt-4">登入</button>
+            
+                            </form>
+                                
+                      
+                            <div class=" mb-4 text-end">
+                                <a href="#" class="d-inline-block forgotPassword text-light">忘記密碼</a>
+                            </div>
+                            
+            
+                            <div class="useQuickLogin d-flex align-items-center mb-4">
+                                <div class="quickLoginLine"></div>
+                                <div class=" text-light">使用以下方式快速登入</div>
+                                <div class="quickLoginLine"></div>
+                            </div>
+            
+                            <button class="btn btn-fb w-100 text-light mb-4">
+                                <i class="bi bi-facebook"></i>
+                                &emsp;Facebook</button>
+                            <button class="btn btn-line text-light w-100">
+                                <i class="bi bi-line"></i>
+                                &emsp;Line</button>
+            
+            
+                        </div>       
+                        <div class="register-content container">
+                            <div class="line"></div>
+                            <div class="phone">
+                                <div>TW +886</div>
+                                <input type="phone" class="form-control" id="userPhone" placeholder="0912 345 678">
+                            </div>
+                            <div class="continue">
+                                <button class="btn btn-secondary w-100">繼續</button>
+                            </div>
+                            <div class="useQuickLogin d-flex align-items-center mb-4">
+                                <div class="quickLoginLine"></div>
+                                <div class="text-light">使用以下方式快速註冊</div>
+                                <div class="quickLoginLine"></div>
+                            </div>
+                            <button class="btn btn-fb w-100 text-light mb-4">
+                                <i class="bi bi-facebook"></i>
+                                &emsp;Facebook</button>
+                            <button class="btn btn-line text-light w-100">
+                                <i class="bi bi-line"></i>
+                                &emsp;Line</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     
     
-        <div class="login">
+        <!-- <div class="login">
             <div class="login-box ps-a bg-333">
                 <div class="login-box-banner d-flex ps-r">
                     <div class="register-btn ms-auto text-light">
@@ -173,9 +335,74 @@
             <div class="login-bg">
     
             </div>
+        </div> -->
+
+        
+        
+        <div class="modal fade menu" id="menu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="menu-box ps-a">
+                    <div class="container ps-r">
+            
+                        <div class="menu-title text-light">
+                            分類
+                        </div>
+            
+                        <div class="line">
+            
+                        </div>
+            
+                        <div class="menuBox">
+                            <div class="row justify-content-evenly mx-0">
+                                <a class="col-5 text-center text-light" href="all-product-1.html">
+                                    <img src="pic/all.jpg" alt="" class="w-100 menu-img">
+                                    <h4 class="my-2">
+                                        商品總覽
+                                    </h4>
+            
+                                </a>
+                                <a class="col-5 text-center text-light" href="product1-1.html">
+                                    <img src="pic/party.jpg" alt="" class="w-100 menu-img">
+                                    <h4 class="my-2">
+                                        輕鬆派對
+                                    </h4>
+            
+                                </a>
+                                <a class="col-5 text-center text-light" href="product2-1.html">
+                                    <img src="pic/compete.jpg" alt="" class="w-100 menu-img">
+                                    <h4 class="my-2">
+                                        策略陣營
+                                    </h4>
+            
+                                </a>
+                                <a class="col-5 text-center text-light" href="product3-1.html">
+                                    <img src="pic/icebreaker.jpg" alt="" class="w-100 menu-img">
+                                    <h4 class="my-2">
+                                        破冰大師
+                                    </h4>
+            
+                                </a>
+                                <a class="col-5 text-center text-light" href="product4-1.html">
+                                    <img src="pic/family.jpg" alt="" class="w-100 menu-img">
+                                    <h4 class="my-2">
+                                        闔家同樂
+                                    </h4>
+            
+                                </a>
+                                <div class="col-5">
+            
+            
+                                </div>
+                            </div>
+                        </div>
+            
+            
+                    </div>
+                </div>
+            </div>
         </div>
     
-        <div class="menu">
+        <!-- <div class="menu">
             <div class="menu-box ps-a">
                 <div class="container ps-r">
     
@@ -238,9 +465,9 @@
     
                 </div>
             </div>
-        </div>
+        </div> -->
     
-        <div class="search">
+        <!-- <div class="search">
             <div class="search-box ps-a">
                 <div class="container ps-r">
                     <div class="search-title text-light">
@@ -367,13 +594,143 @@
                     
                 </div>
             </div>
-        </div>
+        </div> -->
     
+
+
+
+        <div class="modal fade search" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="search-box ps-a">
+                    <div class="container ps-r">
+                        <div class="search-title text-light">
+                            搜尋
+                        </div>
+                        <div class="line"></div>
+                        <form class="d-flex my-4" role="search">
+                            <input class="form-control" type="search" placeholder="找桌遊" aria-label="Search" id="searchTableGame">
+                        </form>
+                        <div class="searchTableBox">
+                            <table class="table my-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="col-4 text-light">分類</th>
+                                        <th scope="col" class="col-4 text-light">名稱</th>
+                                        <th scope="col" class="col-4"></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="searchTableBox">
+                            <table class="table">
+                                <tbody class="align-middle" id="searchTable">
+                                    <tr>
+                                        <td class="text-light col-4">策略陣營</td>
+                                        <td class="text-light col-4">抵抗組織 阿瓦隆</td>
+                                        <td class=" col-4">
+                                            <a href="awalong.html">
+                                                <img src="pic/original_.jpg" alt="" class="w-100">
+                                            </a>
+            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-light col-4">策略陣營</td>
+                                        <td class="text-light col-4">風聲</td>
+                                        <td class=" col-4">
+                                            <a href="blackList.html">
+                                                <img src="pic/e07194cf402928ab1732f0b4ee746f1b.jpg" alt="" class="w-100">
+                                            </a>
+            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-light col-4">輕鬆派對</td>
+                                        <td class="text-light col-4">出包魔法師</td>
+                                        <td class=" col-4">
+                                            <a href="abracaWhat.html">
+                                                <img src="pic/Q021-3D.jpg" alt="" class="w-100">
+                                            </a>
+            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-light col-4">輕鬆派對</td>
+                                        <td class="text-light col-4">從前從前</td>
+                                        <td class=" col-4">
+                                            <a href="onceUponTime.html">
+                                                <img src="pic/5ab909d6c6b5aa0d60111e79_Onc.jpg" alt="" class="w-100">
+                                            </a>
+            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-light col-4">破冰大師</td>
+                                        <td class="text-light col-4">試個好遊戲</td>
+                                        <td class=" col-4">
+                                            <a href="goodGame.html">
+                                                <img src="pic/i010003_1622529460.jpg" alt="" class="w-100">
+                                            </a>
+            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-light col-4">策略陣營</td>
+                                        <td class="text-light col-4">間諜危機</td>
+                                        <td class=" col-4">
+                                            <img src="pic/pic2254217_lg.jpg" alt="" class="w-100">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-light col-4">策略陣營</td>
+                                        <td class="text-light col-4">機密代號</td>
+                                        <td class=" col-4">
+                                            <img src="pic/Codenames_3D.jpg" alt="" class="w-100">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-light col-4">策略陣營</td>
+                                        <td class="text-light col-4">血契獵殺</td>
+                                        <td class=" col-4">
+                                            <img src="pic/5ab8f1bce92abf9f316d91e6_Blood_Bound_Box_3D.jpg" alt="" class="w-100">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-light col-4">輕鬆派對</td>
+                                        <td class="text-light col-4">傳情畫意</td>
+                                        <td class=" col-4">
+                                            <img src="pic/original_01.jpg" alt="" class="w-100">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-light col-4">輕鬆派對</td>
+                                        <td class="text-light col-4">終極審判 電車難題</td>
+                                        <td class=" col-4">
+                                            <img src="pic/1598868475-3931480533-g_wn.jpg" alt="" class="w-100">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-light col-4">輕鬆派對</td>
+                                        <td class="text-light col-4">黃牌</td>
+                                        <td class=" col-4">
+                                            <img src="pic/68ca464f539388840937ce4b92a9487d.jpg" alt="" class="w-100">
+                                        </td>
+                                    </tr>
+                                </tbody>
+            
+                            </table>
+            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top nav-sm-top">
             <div class="container-fluid">
                 <div class="navbar-brand mx-auto">
-                    <img src="pic/LOGO-1.jpg" alt="" class="logo">
+                    <img src="pic/LOGO-4.png" alt="" class="logo">
                 </div>
             </div>
         </nav>
@@ -382,7 +739,7 @@
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top nav-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="pic/LOGO-1.jpg" alt="" class="logo">
+                    <img src="pic/LOGO-4.png" alt="" class="logo">
                 </a>
     
                 <div class="collapse navbar-collapse navbar-sm" id="navbarSupportedContent">
@@ -393,15 +750,18 @@
                                 所有商品
                             </a>
                             <ul class="dropdown-menu bg-333">
-                                <li><a class="dropdown-item text-light" href="all-product-1.html">商品總覽</a></li>
-                                <li><a class="dropdown-item text-light" href="product1-1.html">輕鬆派對</a></li>
-                                <li><a class="dropdown-item text-light" href="product2-1.html">策略陣營</a></li>
-                                <li><a class="dropdown-item text-light" href="product3-1.html">破冰大師</a></li>
-                                <li><a class="dropdown-item text-light" href="product4-1.html">闔家同樂</a></li>
+                                <li><a class="dropdown-item" href="all-product-1.html">商品總覽</a></li>
+                                <li><a class="dropdown-item" href="product1-1.html">輕鬆派對</a></li>
+                                <li><a class="dropdown-item" href="product2-1.html">策略陣營</a></li>
+                                <li><a class="dropdown-item" href="product3-1.html">破冰大師</a></li>
+                                <li><a class="dropdown-item" href="product4-1.html">闔家同樂</a></li>
                             </ul>
                         </li>
                         <li>
-                            <div class="nav-login nav-link text-light fs-20">登入</div>
+                            <div class="text-light fs-20 nav-link" data-bs-toggle="modal" data-bs-target="#login">
+                                登入
+                            </div>
+                            
                         </li>
                         <li class="shoppingCart-nav text-light">
                             <span class="glyphicon glyphicon-shopping-cart my-cart-icon nav-link bi bi-cart">
@@ -432,19 +792,19 @@
                         
     
                     </a>
-                    <div class="col text-light nav-sm-item text-center nav-sm-login">
+                    <div class="col text-light nav-sm-item text-center" data-bs-toggle="modal" data-bs-target="#sm-login">
                         <i class="bi bi-person-circle"></i>
                         <p class="nav-link">個人</p>
     
                         
                     </div>
-                    <div class="col text-light nav-sm-item text-center menu-btn">
+                    <div class="col text-light nav-sm-item text-center menu-btn" data-bs-toggle="modal" data-bs-target="#menu">
                         <i class="bi bi-justify"></i>
                         <p>分類</p>
     
                     </div>
     
-                    <div class="col search-btn text-light nav-sm-item text-center">
+                    <div class="col search-btn text-light nav-sm-item text-center" data-bs-toggle="modal" data-bs-target="#search">
                         <i class="bi bi-search"></i>
                         <p>搜尋</p>
                     </div>
@@ -508,6 +868,118 @@
     </div>
 
 
+    <div class="container service">
+        <div class="service-title">
+            <div class="col-12">
+                <h1 class="py-1 ps-4">
+                    服務項目
+                </h1>
+            </div>
+        </div>
+        <div class="service-content row align-items-center mt-4">
+            <div class="col-12 col-md-6">
+                <img src="pic/LOGO-2.jpg" alt="" class="w-100 service-content-img">
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row text-light align-items-center shop">
+                    <div class="col-12">
+                        <h2 class="text-center">實體店面</h2>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center">
+                        <img src="pic/shop.png" alt="" class="service-right-img">
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            平日：50元／1H(上限150元)
+                        </p>
+                        <p>
+                            假日：60元／1H(上限200元)
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-light align-items-center online-market mt-4">
+                    <div class="col-12">
+                        <h2 class="text-center">線上商城</h2>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center">
+                        <img src="pic/cart4.png" alt="" class="service-right-img">
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            全館滿490免運
+                        </p>
+                        <p>
+                            全館滿2000優惠9折
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="supply d-flex ps-4">
+
+            <h1 class="text-width wow rollIn py-1" data-wow-delay="0.2s">我</h1>
+            <h1 class="text-width wow rollIn py-1" data-wow-delay="0.4s">們</h1>
+            <h1 class="text-width wow rollIn py-1" data-wow-delay="0.6s">提</h1>
+            <h1 class="text-width wow rollIn py-1" data-wow-delay="0.8s">供</h1>
+        </div>
+
+        <div class="about-content row mt-4">
+
+
+            <div class="col-md-4 col-6 about-content-card wow bounceInDown" data-wow-delay="1s">
+                <h2 class="text-light mb-1">
+                    按讚分享
+                </h2>
+                <img src="pic/like.png" alt="" class="about-content-img">
+                <p>
+                    店內打卡分享至FB，送奶油餐包一份
+                </p>
+            </div>
+            <div class="col-1 about-content-space"></div>
+
+
+
+            <div class="col-md-4 col-6 about-content-card wow bounceInDown" data-wow-delay="1.2s">
+                <h2 class="text-light mb-1">
+                    飲料暢飲
+                </h2>
+                <img src="pic/beverage-01.png" alt="" class="about-content-img">
+                <p>
+                    提供冬瓜茶、紅茶、麥茶無限續杯
+                </p>
+            </div>
+            <div class="col-3 about-content-space"></div>
+
+
+            <div class="col-3 about-content-space"></div>
+            <div class="col-md-4 col-6 about-content-card wow bounceInDown" data-wow-delay="1.4s">
+                <h2 class="text-light mb-1">
+                    全台配送
+                </h2>
+                <img src="pic/truck.png" alt="" class="about-content-img">
+                <p>
+                    無論是山上或是離島，皆提供跨縣市的商品配送
+                </p>
+            </div>
+            
+
+
+            <div class="col-1 about-content-space"></div>
+            <div class="col-md-4 col-6 about-content-card wow bounceInDown" data-wow-delay="1.6s">
+                <h2 class="text-light mb-1">
+                    優惠價格
+                </h2>
+                <img src="pic/cash-coin.png" alt="" class="about-content-img">
+                <p>
+                    全館滿2000享9折，可另外搭配活動優惠
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+
     <div class="container promotion">
         <div class="col-12">
             <div class="promotion-title">
@@ -532,7 +1004,7 @@
         <div class="product-card-title">
             <div class="col-12">
                 <h1 class="py-1 ps-4">
-                    暢銷商品
+                    熱銷商品
                 </h1>
             </div>
         </div>
@@ -703,7 +1175,7 @@
                     <img src="pic/e07194cf402928ab1732f0b4ee746f1b.jpg" alt="" class="product-card-img w-100">
                 </a>
             </div>
-            <div class="col-12 col-md-7 ms-auto mb-4">
+            <div class="col-12 col-md-7 ms-auto">
                 <div class="text">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item bg-333">
@@ -755,6 +1227,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row justify-content-center">
+            <button class="btn bg-333 more-btn"> 
+                <a href="all-product-1.html" class="text-light">
+                    查看更多▸
+                </a>
+            </button>
         </div>
     </div>
 
@@ -812,6 +1291,10 @@
     <script src="js/jquery.mycart-master/js/jquery-2.2.3.min.js"></script>
     <script src="js/jquery.mycart-master/js/jquery.mycart.js"></script>
     <script src="js/plus.js"></script>
+    <script src="js/WOW-master/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 
 
