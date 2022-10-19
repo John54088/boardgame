@@ -82,9 +82,9 @@ body{
 .menu-box{
     overflow: scroll;
 }
-.searchTableBox{
+.searchTableBox:nth-last-child(1){
     width: 100%;
-    height: calc(100vh - 93px - 4.5rem);
+    height: calc(100vh - 133px - 4.5rem);
     overflow: scroll;
 }
 .scrollProhibit{
@@ -294,10 +294,10 @@ tbody, td, tfoot, th, thead, tr{
 .tableHover tr{
     transition: 0.5s;
 }
-tbody tr:nth-last-child(even){
+#my-cart-table tbody tr:nth-last-child(even){
     border-bottom: #999 solid 1px;
 }
-tbody tr:nth-last-child(2){
+#my-cart-table tbody tr:nth-last-child(2){
     border: none;
 }
 .tableHover tr:hover{
