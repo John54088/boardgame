@@ -1,26 +1,5 @@
 $(document).ready(function(){
-    // $(".nav-sm-login, .sm-login-close").click(function () {
-    //     $(".sm-login, .nav-sm-bottom, .nav-sm-top").slideToggle();
-    // });
-
-    // $(".menu-btn, .menu-close").click(function(){
-    //     $(".menu, .nav-sm-bottom, .nav-sm-top").slideToggle();
-    // });
-
-    // $(".nav-login").click(function(){
-    //     $(".nav-top").addClass("")
-    // })
    
-    // $(".search-btn, .search-close").click(function(){
-    //     $(".search, .nav-sm-bottom, .nav-sm-top").slideToggle();
-    // });
-
-    // $(".nav-sm-login, .menu-btn, .search-btn").click(function(){
-    //     $("body").addClass("scrollProhibit")
-    // })
-    // $(".sm-login-close, .menu-close, .search-close").click(function(){
-    //     $("body").removeClass("scrollProhibit")
-    // })
 
     
     $(".register-btn").click(function(){
@@ -96,14 +75,14 @@ $(document).ready(function(){
                 $.each(products, function () {
                     total += this.quantity * this.price;
                 });
-                return total * 0.05;
+                return total * 0.1;
             },
             getFinalPrice: function (products) {
                 var total = 0;
                 $.each(products, function () {
                     total += this.quantity * this.price;
                 });
-                return total * 0.95;
+                return total * 0.9;
             },
         });
 

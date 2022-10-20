@@ -27,7 +27,7 @@ body{
     background-color: #000;
     color: #fff;
 }
-.promotion-title, .product-card-title, .service-title, .supply{
+.promotion-title, .product-card-title, .service-title, .supply-title{
     margin-top: 50px;
     padding: 15px 0;
     background-color: #333;
@@ -48,7 +48,6 @@ body{
 }
 .sm-login-box{
     width: 100%;
-    height: 57vh;
     background-color: #333;
     left: 50%;
     top: 50%;
@@ -57,7 +56,17 @@ body{
     transition: 0.5s;
     border-radius: 20px;
 }
-.search-box, .menu-box{
+.menu-box{
+    width: 100%;
+    background-color: #333;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.search-box{
     width: 100%;
     height: 90vh;
     background-color: #333;
@@ -71,7 +80,6 @@ body{
 .login-box{
     width: 40%;
     min-width: 550px;
-    height: 500px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -240,18 +248,6 @@ body{
 .menu-box .col-5{
     padding: 0;
 }
-.menuBox{
-    width: 100%;
-    height: calc(90vh - 55px - 3rem);
-    overflow: scroll;
-    margin-top: 1.5rem;
-}
-.login .phone, .sm-login .phone{
-    margin: calc(37px + 1rem) 0;
-}
-.login .continue, .sm-login .continue{
-    margin-bottom: calc(37px + 1rem);
-}
 .promotionContent p{
     padding: 0 40px;
     margin-bottom: 50px;
@@ -270,6 +266,14 @@ body{
     max-height: 80vh;
     padding: 0 10px;
     border: 10px solid #333;
+}
+.modal-content-custom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-clip: padding-box;
+    outline: 0;
 }
 .modal-body{
     padding-top: 0;
@@ -299,19 +303,19 @@ tbody, td, tfoot, th, thead, tr{
     background-color: #fff;
     color: #000;
 }
-.promotion-img, .product-card-img, .service-content-img{
+.promotion-img, .product-card-img, .service-content-img, .menu-box img{
     border-radius: 20px;
 }
-.service-content h2, .about-content h2{
+.service-content h2, .supply-content h2{
     font-size: 25px;
     font-weight: 700;
     padding-bottom: 10px;
 }
-.service-content p,  .about-content p{
+.service-content p,  .supply-content p{
     line-height: 2;
     color: rgb(200, 200, 200);
 }
-.about-content-img{
+.supply-content-img{
     width: 60px;
     float: left;
     margin-right: 12px;
@@ -403,6 +407,9 @@ tbody, td, tfoot, th, thead, tr{
     background-color: #fff;
     color: #000;
 }
+.fotorama__wrap{
+    width: 100% !important;
+}
 @media screen and (min-width: 768px){
     .product-card .col-12:nth-child(even){
         margin-top: -100px;
@@ -474,10 +481,10 @@ tbody, td, tfoot, th, thead, tr{
     .shop{
         margin-top: 1.5rem;
     }
-    .about-content-card:nth-child(6), .about-content-card:nth-child(8){
+    .supply-content-card:nth-child(6), .supply-content-card:nth-child(8){
         margin-top: 1.5rem;
     }
-    .about-content-space{
+    .supply-content-space{
         display: none;
     }
     
