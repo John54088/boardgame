@@ -68,7 +68,7 @@ body{
 }
 .search-box{
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     background-color: #333;
     left: 50%;
     top: 50%;
@@ -88,7 +88,7 @@ body{
 }
 .searchTableBox:nth-last-child(1){
     width: 100%;
-    height: calc(90vh - 133px - 4.5rem);
+    height: calc(80vh - 133px - 4.5rem);
     overflow: scroll;
 }
 .scrollProhibit{
