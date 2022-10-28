@@ -314,6 +314,7 @@ tbody, td, tfoot, th, thead, tr{
 .service-content p,  .supply-content p{
     line-height: 2;
     color: rgb(200, 200, 200);
+    font-size: 18px;
 }
 .supply-content-img{
     width: 60px;
@@ -409,6 +410,21 @@ tbody, td, tfoot, th, thead, tr{
 }
 .fotorama__wrap{
     width: 100% !important;
+}
+.swiper{
+    width: 100%;
+}
+.delay-1{
+    animation-delay: 0.25s
+}
+.delay-2{
+    animation-delay: 0.5s
+}
+.delay-3{
+    animation-delay: 0.75s
+}
+.delay-4{
+    animation-delay: 1s
 }
 @media screen and (min-width: 768px){
     .product-card .col-12:nth-child(even){

@@ -7,7 +7,9 @@
     <link rel="icon" href="pic/LOGO-1.jpg">
     <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="js/WOW-master/css/libs/animate.css">
+    <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -474,7 +476,7 @@
     </nav>
 
 
-    <div id="carouselExampleCaptions" class="carousel slide fix-space" data-bs-ride="carousel">
+    <!-- <div id="carouselExampleCaptions" class="carousel slide fix-space" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -516,8 +518,16 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div> -->
 
+    <div class="swiper mySwiper fix-space">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="pic/banner-1.jpg" class="d-block w-100" alt="..."></div>
+          <div class="swiper-slide"><img src="pic/banner-2.jpg" class="d-block w-100" alt="..."></div>
+          <div class="swiper-slide"><img src="pic/banner-3.jpg" class="d-block w-100" alt="..."></div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
 
     <div class="container service">
         <div class="service-title">
@@ -572,10 +582,10 @@
         <div class="supply-title col-12">
             <div class="ps-4 d-flex">
             
-                <h1 class="text-width wow rollIn py-1" data-wow-delay="0.2s">我</h1>
-                <h1 class="text-width wow rollIn py-1" data-wow-delay="0.4s">們</h1>
-                <h1 class="text-width wow rollIn py-1" data-wow-delay="0.6s">提</h1>
-                <h1 class="text-width wow rollIn py-1" data-wow-delay="0.8s">供</h1>
+                <h1 class="text-width animate__rotateInDownLeft animate__animated py-1 delay-1 wow">我</h1>
+                <h1 class="text-width animate__rotateInDownLeft animate__animated py-1 delay-2 wow">們</h1>
+                <h1 class="text-width animate__rotateInDownLeft animate__animated py-1 delay-3 wow">提</h1>
+                <h1 class="text-width animate__rotateInDownLeft animate__animated py-1 delay-4 wow">供</h1>
             </div>
         </div>
         
@@ -583,7 +593,7 @@
         <div class="supply-content row mt-4">
     
     
-            <div class="col-md-4 col-6 supply-content-card wow bounceInDown" data-wow-delay="1s">
+            <div class="col-md-4 col-6 supply-content-card animate__backInLeft animate__animated delay-1 wow">
                 <h2 class="text-light mb-1">
                     按讚分享
                 </h2>
@@ -596,7 +606,7 @@
     
     
     
-            <div class="col-md-4 col-6 supply-content-card wow bounceInDown" data-wow-delay="1.2s">
+            <div class="col-md-4 col-6 supply-content-card animate__backInLeft animate__animated delay-3 wow">
                 <h2 class="text-light mb-1">
                     飲料暢飲
                 </h2>
@@ -609,7 +619,7 @@
     
     
             <div class="col-3 supply-content-space"></div>
-            <div class="col-md-4 col-6 supply-content-card wow bounceInDown" data-wow-delay="1.4s">
+            <div class="col-md-4 col-6 supply-content-card animate__backInLeft animate__animated delay-2 wow">
                 <h2 class="text-light mb-1">
                     全台配送
                 </h2>
@@ -622,7 +632,7 @@
     
     
             <div class="col-1 supply-content-space"></div>
-            <div class="col-md-4 col-6 supply-content-card wow bounceInDown" data-wow-delay="1.6s">
+            <div class="col-md-4 col-6 supply-content-card animate__backInLeft animate__animated delay-4 wow">
                 <h2 class="text-light mb-1">
                     優惠價格
                 </h2>
@@ -888,7 +898,7 @@
         <div class="row justify-content-center">
             <button class="btn bg-333 more-btn"> 
                 <a href="all-product-1.html" class="text-light">
-                    查看更多▸
+                    查看更多 ▸
                 </a>
             </button>
         </div>
@@ -925,7 +935,7 @@
                         </div>
                         <p>XXX桌遊股份有限公司</p>
                         <p>地址：雲林縣斗六市中山路104巷48號</p>
-                        <p>服務時間：週一～周六 13：00～22：00</p>
+                        <p>服務時間：MON ~ SAT 13：00～22：00</p>
                         <p>
                             copyright &copy; since 1997  
                         </p>
@@ -952,7 +962,20 @@
     <script>
         new WOW().init();
     </script>
-
+    <script src="js/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            effect: 'coverflow',
+        });
+    </script>
 
 
   </body>
